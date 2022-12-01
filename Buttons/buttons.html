@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: rgb(240, 162, 162);
+            margin: 12px auto;
+            padding: 5px;
+            width: 423px;
+            text-align: justify;
+        }
+        .btn {
+            background-color: rgb(36, 141, 160);
+            border: none;
+            width: 102px;
+            height: 22px;
+            margin: 3px auto;
+            padding: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 14px;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .btn:hover{
+            background-color: rgb(144, 198, 230);
+        }
+        .btn:active{
+            border:2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont">
+        <h3>This is the container</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus debitis voluptas possimus rem deserunt accusamus aperiam exercitationem. Eos quas repellat error itaque exercitationem?</p>
+        <center>
+            <!-- we can use autofocus and disabled tag to give focus and disable the button by default -->
+           <button class="btn" >Click me</button> 
+            <button class="btn">Contact us</button>
+        </center>
+    </div>
+</body>
+
+</html>

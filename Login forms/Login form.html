@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Login Form</title>
+    <style>
+        /* @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"); */
+
+        body {
+            background-image: url("BgImage/bgi10.jpg");
+            cursor: pointer;
+        }
+
+        .login-box {
+            height: 50%;
+            width: 27%;
+            position: absolute;
+            left: 37%;
+            top: 25%;
+            margin: 4px;
+            padding: 27px;
+            border-radius: 10px;
+        }
+        .textbox {
+            margin: 1px;
+            padding: 4px;
+            width: 81%;
+            /* border-radius: 15px; */
+            position: relative;
+            left: -2%;
+            border-bottom: 2px solid rgb(172 10 36);
+            overflow: hidden;
+        }
+
+        .login-box h2 {
+            float: left;
+            font-size: 170%;
+            border-bottom: 2px solid blue;
+           
+        }
+
+        .btn {
+            border: 2px solid rgb(172 10 36);
+            /* background-color: rgb(179 87 159); */
+            background-color: black;
+            border-radius: 5px;
+            margin: 8px;
+            padding: 3px;
+            width: 320px;
+            position: relative;
+            left: -2%;
+            font-weight: bolder;
+            font-size: 13px;
+            color: white;
+        }
+
+        .textbox input {
+           border: none;
+            /* outline: none; */
+            border-radius: 43px;
+            width: 199px;
+            padding: 6px;
+            margin: 0px;
+            background: none;
+            font-size: 16px;
+            color: white;
+        }
+
+        .textbox input:hover {
+            border: 2px solid rgb(53, 73, 187);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-box">
+        <h2 style="color: white">LOGIN &nbsp;PAGE</h2>
+        <div class="textbox" style="color: white;">
+         <!-- &#9755; -->   &#128187; <input type="text" name="Myusername" placeholder="Username">
+        </div>
+        <br>
+        <div class="textbox" style="color: white;">
+     <!--&#9755; -->   &#128273;  <input type="password" name="MyPassword" placeholder="Password">
+        </div>
+        <br>
+        <button class="btn">SIGN IN</button>
+        <button class="btn">CONTACT US</button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            background-color: rgb(109, 51, 94);
+            border-radius: 24px;
+            border: 2px solid rgb(109, 51, 94);
+        }
+        .navbar ul {
+            overflow: auto;
+            margin-top: 6px;
+            margin-bottom: -4px;
+            height: 35px;
+        }
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: -4px 22px;
+            padding: 6px 8px;
+        }
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .navbar li a:hover {
+            color: black;
+            background-color: rgb(208 196 208);
+            padding: 2px 17px;
+            /* margin: 5px 6px; */
+            border-radius: 19px;
+        }
+        .navbar input {
+           outline: none;
+            padding: 2px 17px;
+            text-align: center;
+            background-color: black;
+            border-radius: 34px;
+            border-color: black;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            right: 35px;
+            top: 17px;
+            box-shadow:2px 2px 3px rgb(25, 23, 26);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="">HOME</a> </li>
+                <li> <a href="">PROJECTS</a> </li>
+                <li> <a href="">ABOUT US</a> </li>
+                <li> <a href="">GALLERY</a> </li>
+                <li> <a href="">CONTACTS</a> </li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

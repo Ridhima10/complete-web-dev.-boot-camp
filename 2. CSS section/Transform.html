@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform property</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 98vw;
+            background-color: darksalmon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: hotpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 2s ease-in-out;
+        }
+        .box:hover{
+            /* transform: rotate(360deg); */  /*it will rotate the box*/
+            /* transform: scale(2);*/ /*it will zoom-in the box 2x */
+            /* transform: translateX(80px); */ /*box will move horizontally*/
+            transform: translateY(-80px); /*box will move vertically*/
+            /* transform: translate(40px,70px); */ /*Move acc to the values*/
+            /* transform: skew(20deg); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Welcome here :)</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and objects</title>
+</head>
+<body>
+    <script>
+        let a='20';
+        let b='string';
+        let c=true;
+        let d=undefined;
+        let e=null;
+
+
+        //Object
+        //Syntax: 
+        // let name= {
+        // property: value,
+        // ------, 
+        // -------,
+        //    }
+        let employee= {
+        name:"xyz",
+        salary:"20",
+        "Roll no" :"60984", //If you want to give space then write it the quotes
+        address:"lorem200000",
+        }
+        console.log(employee);
+
+      // you can also write in the DOM by using inspect
+      eg. employee.name
+      "xyz"
+
+      employee['Roll no']    //this method is used when you want to add space in property of value
+      "60984"
+
+      //Array(it is also an object)
+      //let name=[1,2,3,"xyz",undefined,null];
+      let str=new Array(10,29,3,"xyz",undefined); //another method for initializing array
+      console.log(str);
+
+       //it will print the length of the array
+      console.log(str.length);
+
+      //it will print the index value
+      console.log(str[1]); 
+
+      //it will sort the array
+      str = str.sort(function(a,b){return a-b}); 
+      console.log(str);
+      //it will push the element at the end 
+      str.push("NEW ELEMENT");
+      console.log(str);
+
+      let names=new Array(23); //if you want to make an array of 23 elements
+      console.log(names);
+      </script>
+</body>
+</html>

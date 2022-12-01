@@ -1,0 +1,20 @@
+#btn6{
+    background: none;
+    position: relative;
+    color:#ff9f1a;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom :2px solid rgb(204, 52, 123) ;    
+    transition: all 0.3s ease-in-out;
+}
+#btn6:hover{
+    color: white;
+    /* border-bottom: 2px solid #ff9f1a; */
+    border-bottom: none;
+    border-top:2px solid rgb(204, 52, 123);
+    border-left:2px solid rgb(204, 52, 123);
+    border-right: 2px solid rgb(204, 52, 123);
+    box-shadow: 2px 2px 3px  #ff9f1a;
+}
+

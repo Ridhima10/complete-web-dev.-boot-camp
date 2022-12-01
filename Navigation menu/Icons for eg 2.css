@@ -1,0 +1,31 @@
+.fab {
+    position: relative;
+    font-weight: 400;
+    padding-right: 23px;
+    top: -5px;
+    padding-left: 11px;
+}
+
+.fas {
+    font-weight: 900;
+    position: relative;
+    top: 15px;
+    left: 25px;
+    color: rgb(253, 244, 244);
+}
+
+.far {
+    position: relative;
+    top: 15px;
+    left: 7px;
+    color: rgb(233, 227, 227);
+}
+
+.fa-pizza-slice {
+    margin-right: 14px;
+}
+
+.fa-phone-alt {
+    position: relative;
+    left: 12px;
+}

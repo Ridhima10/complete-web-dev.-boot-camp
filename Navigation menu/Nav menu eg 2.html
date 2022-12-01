@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down menu</title>
+    <link rel="stylesheet" href="S.b for eg 2.css">
+    <link rel="stylesheet" href="Icons for eg 2.css">
+    <script src="https://kit.fontawesome.com/d7fc361caa.js" crossorigin="anonymous"></script>
+    <style>
+        .nav {
+            background: linear-gradient(#1289A7, #0652DD);
+        }
+
+        ol {
+            list-style: none;
+            display: flex;
+            /* justify-content: space-around; */
+        }
+
+        li {
+            width: 93.5px;
+            padding: 12px;
+            font-size: 17px;
+            margin: 2px;
+            font-weight: 700;
+            color: white;
+        }
+
+        li:hover,
+        li.active {
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-shadow: 1px 1px 2px rgb(11, 11, 12);
+        }
+
+        li:nth-child(1) {
+            width: 67px;
+            padding-left: 24px;
+            padding-right: 4px;
+        }
+
+        li:nth-child(2) {
+            width: 55px;
+            padding-left: 27px;
+            padding-right: 1px;
+        }
+
+        li:nth-child(3) {
+            width: 56px;
+            padding-left: 10px;
+            padding-right: 16px;
+        }
+
+        li:nth-child(4) {
+            padding-left: 33px;
+            padding-right: 39px;
+            width: 38px;
+        }
+
+        li:nth-child(5) {
+            padding-left: 2%;
+        }
+
+        li:nth-child(6) {
+            padding-left: 2%;
+        }
+
+        legend {
+            text-align: center;
+        }
+
+        fieldset {
+            position: relative;
+            left: 38px;
+            height: 20px;
+            border: 2px solid rgb(236, 228, 228);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ol>
+            <i class="fas fa-home"></i>
+            <li class="active">HOME</li>
+            <i class="fas fa-utensils"></i>
+            <li>MENU</li>
+            <i class="fas fa-user"></i>
+            <li>ABOUT</li>
+            <i class="fas fa-pizza-slice"></i>
+            <li>BLOG</li>
+            <i class="far fa-images"></i>
+            <li>GALLERY</li>
+            <i class="fas fa-phone-alt"></i>
+            <li> CONTACT</li>
+            <fieldset>
+                <legend>Or you can:</legend>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram-square"></i>
+            </fieldset>
+            <input type="text" id="SB" placeholder="Type here..">
+            <input type="button" value="&#128269;">
+        </ol>
+    </div>
+</body>
+
+</html>

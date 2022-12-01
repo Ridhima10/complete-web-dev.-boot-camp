@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="backend.php">
+        <div>
+            <label for="Name">Name:</label>
+            <input type="text" name="Myname" id="Name">
+        </div>
+        <br>
+        <div>
+            <label for="sex">Sex:</label> &nbsp;
+                Male<input type="radio" name="Mysex" id="sex">   Female<input type="radio" name="Mysex" id="sex">
+                Others<input type="radio" name="Mysex" id="sex">
+        </div>
+        <br>
+        <div>
+            <label for="Eyecolor">Eye Color:</label>
+            <select name="Eyecolor" id="Eyecolor">
+                <option>Green</option>
+                <option>Black</option>
+                <option>Brown</option>
+                <option>Blue</option>
+                <option>Grey</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="Check">Check all the apply:</label> &nbsp;
+           Over 6 feet tall <input type="checkbox" name="Mycheck" id="Check">
+           Over 200 pounds <input type="checkbox" name="Mycheck" id="Check">
+        </div>
+        <br>
+        <div>
+            <label for="textbox">Describe your athletic ability:</label>
+         <br>   <textarea name="Describe" id="textbox" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <button>Enter my information</button>
+    </form>
+</body>
+</html>

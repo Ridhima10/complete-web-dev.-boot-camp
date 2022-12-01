@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Js Events</title>
+    <style>
+      #btn,
+      #click {
+        padding: 0.5rem;
+        background-color: rebeccapurple;
+        font-weight: bold;
+        border: 2px solid rgb(158, 124, 192);
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Browser events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit 
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+
+    <div class="container" id="cont">
+      <h1>This is heading</h1>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In deleniti
+        distinctio non recusandae alias amet ratione, natus dolores assumenda,
+        voluptates aperiam optio tenetur? Officiis sint consectetur beatae
+        impedit reprehenderit assumenda blanditiis aut et soluta repellendus
+        tempora harum unde praesentium saepe sequi quo doloremque incidunt
+        labore quod quam, magni ut earum enim. Iusto esse corrupti maxime
+        officia distinctio illum ex magnam. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Quam sed officia vel autem iste architecto
+        quasi laudantium, possimus nostrum expedita! Perspiciatis magnam quia
+        excepturi nemo neque eius illo perferendis sit quas veniam, quibusdam
+        sapiente in quam rerum quasi accusantium. Autem reiciendis est qui nihil
+        deserunt nostrum excepturi, itaque dolorem amet.
+      </p>
+      <button id="btn" onclick="toggleHide()">Show/Hide</button>
+      <!-- <button id="click" onclick="clicked()">click here</button> -->
+    </div>
+    <script>
+      function toggleHide() {
+          let btn = document.getElementById('btn');
+          let para = document.getElementById('para');
+          if (para.style.display != 'none') {
+              para.style.display = 'none'
+          }
+          else {
+              para.style.display = 'block';
+          }
+      }
+    //   let para = document.getElementById('para');
+    //   para.addEventListener('mouseover', function run() {
+    //       alert('Mouse Inside');
+    //   });
+
+    //   para.addEventListener('mouseout', function run() {
+    //       alert('Mouse went out');
+    //   });
+   
+
+      //onclick 
+    //   function clicked() {
+    //     console.log('The button is clicked');
+    //   }
+      //to click on container and change the css
+    //    cont.addEventListener('click',function(){ 
+    //        document.querySelectorAll('.container')[0].innerHTML="<b>Hellooooooooo</b>"
+    //     console.log('clicked on container');
+    //   })
+      
+
+      //onload
+      window.onload = function () {
+        console.log('The window has been loaded');
+    };
+
+    //to click on a div ..note: it will be done on id only
+    // cont.addEventListener('click',function(){ 
+    //     console.log('div is clicked');
+    //   })
+    // cont.addEventListener('mouseover',function(){ 
+    //     console.log('mouse on container');
+    //   })
+    // cont.addEventListener('mouseout',function(){ 
+    //     console.log('mouse out of container');
+    //   })
+    // cont.addEventListener('mouseup',function(){  //click and release
+    //     console.log('mouse up when clicked on container');
+    //   })
+    // cont.addEventListener('mousedown',function(){ 
+    //     console.log('mouse down when clicked on container'); //click and hold
+    //   })
+   
+
+
+    //to change the text on mouseup and mousedown
+    // let prev=document.querySelectorAll('.container')[0].innerHTML;
+    // cont.addEventListener('mouseup',function(){  
+    //     document.querySelectorAll('.container')[0].innerHTML=prev;
+    //     console.log('mouse up');
+    //   })
+
+    //    cont.addEventListener('mousedown',function(){ 
+    //           document.querySelectorAll('.container')[0].innerHTML="<b>we have clicked</b>";
+    //     console.log('mouse down when clicked on container'); 
+    //   })
+    </script>
+  </body>
+</html>

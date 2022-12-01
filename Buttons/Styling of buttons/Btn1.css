@@ -1,0 +1,11 @@
+#btn1 {
+    border: 2px solid red;
+    color: red;
+    border-radius: 5px;
+    transition:all 1s ease-in-out;
+    /* background: none; */
+}
+#btn1:hover{
+    background-color: rgb(230, 76, 76);
+    color: white;
+}

@@ -1,0 +1,30 @@
+#btn2{
+   border:2px solid ;
+   color: #27ae60 ;
+   background: none;
+   position: relative;
+   translate: all 3s ease-in-out;
+ }
+#btn2::before, #btn2::after{
+   content: "";
+   position: absolute;
+   height: 2px;
+   width: 14px;
+   background-color:  rgb(15, 15, 51);
+ transform: skew(50deg);
+ transition: 0.4s linear;
+}
+#btn2::before{
+   top: -2px;
+   left: 10%;
+}
+#btn2::after{
+   bottom: -2px;
+   right: 10%;
+}
+#btn2:hover::before{
+   left: 80%;
+}
+#btn2:hover::after{
+   right: 80%;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property of CSS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            margin: auto;
+            width: 100%;
+            border: 2px solid red;
+        }
+
+        img {
+            width: 70px;
+            margin: auto;
+            display: block;
+        }
+
+        h3 {
+            font-family: cursive;
+            margin-top: -15px;
+            margin-left: 12px;
+            text-align: center;
+        }
+
+        .box {
+            border: 4px solid brown;
+            margin: 2px auto;
+            background-color: rgb(192, 133, 145);
+            padding: 2px;
+            width:33%;
+            display: inline-block;
+            text-align: center;           
+        }
+        .container{
+           margin: auto;
+            width:100%;
+display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <header class="disp">
+        <img
+            src="data:image/jpeg;base64,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">
+        <h3>Welcome to Ridhi's blog</h3>
+
+    </header>
+        <div class="box">
+            <h4 class="heading"> heading 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptate dolorem ipsam fuga maxime
+                obcaecati, blanditiis libero deserunt voluptatum animi. Distinctio, ipsam? Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Quibusdam doloribus corporis fuga blanditiis libero est labore
+                reprehenderit, similique ad</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">heading 2</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptate dolorem ipsam fuga maxime
+                obcaecati, blanditiis libero deserunt voluptatum animi. Distinctio, ipsam? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Inventore ipsa, maxime vel animi velit nobis molestias quia iusto impedit
+                beatae.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">heading 3</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptate dolorem ipsam fuga maxime
+                obcaecati, blanditiis libero deserunt voluptatum animi. Distinctio, ipsam? Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Doloremque iure veritatis sed saepe facere cumque molestiae tenetur
+                prae</p>
+        </div>
+    </div>
+</body>
+
+</html>

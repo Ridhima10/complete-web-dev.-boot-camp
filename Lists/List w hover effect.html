@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List with hover effect</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 98%;
+            height: 98vh;
+        }
+
+        ol {
+            list-style: none;
+            width: 30%;
+            height: 50%;
+            /* border: 2px solid yellow; */
+            
+        }
+
+        ol li {
+            height: 10%;
+            width: 60%;
+            /* border: 2px solid white; */
+            margin: 6px;
+            padding: 10px;
+            position: relative;
+            background-color: rgb(32, 32, 32);
+            transition: all 0.3s ease-in-out ;
+            z-index: 100;
+        }
+        ol li::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        z-index: -1;
+        background: red;
+        /* transition: all 0.3s ease-in-out; */
+        }
+      ol li:hover{
+            cursor: pointer;
+        }
+        ol li:hover::before{
+            width: 100%;
+        }
+        ol li:nth-child(1)::before{
+            background-color: rgb(194, 31, 31);
+        }
+        ol li:nth-child(2)::before{
+            background-color: rgb(43, 202, 83);
+        }
+        ol li:nth-child(3)::before{
+            background-color: rgb(214, 55, 121);
+        }
+        ol li:nth-child(4)::before{
+            background-color: rgb(29, 61, 150);
+        }
+        ol li:hover{
+            transform: translateX(10%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ol>
+            <li>RED</li>
+            <li>GREEN</li>
+            <li>PINK</li>
+            <li>BLUE</li>
+        </ol>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .container {
+            border: 2px solid  rgb(41, 41, 194);
+            border-radius: 6px 6px;
+            margin: 1px 1px;
+            padding: 3px 1px;
+            background-color: #cbdee8;
+            font-size: 17px;
+            text-align: justify;
+            width: 50%;
+        }
+        .but {
+            color: rgb(0, 0, 0);
+            background-color: #75beda;
+            border: 2px solid rgb(41, 41, 194);
+            border-radius: 3px 3px;
+            font-weight: bold;
+        }
+
+        .but:hover {
+            background-color: rgb(19, 18, 18);
+            color: white;
+
+        }
+
+        .heading {
+            font-weight: bold;
+            margin: 8px;
+            text-align: center;
+            padding: 4px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .para {
+            margin-left: 21px;
+
+        }
+
+        input {
+            background: none;
+            border: none;
+           border-bottom: 2px solid rgb(43, 41, 41);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="background-color: rgb(0 30 97); color: white; margin-top: 13px;">GGM Science College Jammu:
+            Consulation of
+            stakeholders for opening of educational institutions in the UT of J&K
+
+        </h2>
+        <div class="para">
+            <form action="backend.php"></form>
+            <div>
+                <label for="email" class="heading">&bullet; Email address:</label>
+                <input type="email" name="Myemail" id="email" >
+            </div>
+            <br>
+            <div>
+                <label for="radio" class="heading">&bullet; Stakeholder: </label>
+                Students <input type="radio" name="Mystakeholder" id="radio"> Parent <input type="radio"
+                    name="Mystakeholder" id="radio"> Staff<input type="radio" name="Mystakeholder" id="radio">
+            </div>
+            <br>
+            <div>
+                <label for="name" class="heading">&bullet; Name of the stakeholder:</label>
+                <input type="text" name="Myname" id="name" >
+            </div>
+            <br>
+            <div>
+                <label for="Gender" class="heading">&bullet; Gender:</label>
+                <select name="Mygender" id="Gender">
+                    <option>male</option>
+                    <option>female</option>
+                    <option>others</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="number" class="heading">&bullet; Contact number:</label>
+                <input type="number" name="Mynumber" id="number" >
+            </div>
+            <br>
+            <div>
+                <label for="home town" class="heading">&bullet; Your district/ home town:</label>
+                <input type="text" name="mydistrict" id="home town" >
+            </div>
+            <br>
+            <div>
+                <label for="stream" class="heading">&bullet; stream:</label>
+                <input type="text" name="Mystream" id="stream" >
+            </div>
+            <br>
+            <div>
+                <label for="radio" class="heading">&bullet; Semester:</label>
+                2nd <input type="radio" name="Mysemester" id="radio"> 4th <input type="radio" name="Mysemester"
+                    id="radio">
+                6th
+                <input type="radio" name="Mysemester" id="radio">
+            </div>
+            <br>
+            <div>
+                <label for="roll number" class="heading">&bullet; Roll number:</label>
+                <input type="number" name="Myrollnumber" id="roll number" >
+            </div>
+            <br>
+            <label for="text" class="heading">&bullet; Opinion about reopening of college for starting academic
+                activity:</label>
+            <div>
+                <textarea name="mytext" id="text" cols="30" rows="10" placeholder="any queries?"
+                    style="font-size: 16px; "></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="submit" class="but"> submit here</button>
+                <button type="reset" class="but"> Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

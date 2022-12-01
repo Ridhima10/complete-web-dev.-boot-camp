@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle button</title>
+    <style>
+        .container {
+            height: 164px;
+            width: 136px;
+            background-color: rgb(203, 208, 214);
+            padding: 10px;
+        }
+        input {
+            outline: none;
+            height: 50px;
+            width: 100px;
+            background-color: rgb(230, 221, 221);
+            -webkit-appearance: none;
+            border-radius: 40px;
+            position: relative;
+            transition: 0.3s ease-out;
+            box-shadow: 1px 1px 4px;
+        }
+        input::before {
+            content: '';
+            width: 43px;
+            height: 50px;
+            border-radius: 40px;
+            background-color: white;
+            position: absolute;
+            left: 0%;
+            box-shadow: 1px 1px 5px;
+            transition: 0.3s ease-out;
+        }
+        input:hover {
+            cursor: pointer;
+        }
+        input:checked {
+            background: royalblue;
+        }
+        input:checked::before {
+            right: 0%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>TOGGLE BUTTON</h2>
+        <input type="checkbox">
+    </div>
+</body>
+
+</html>

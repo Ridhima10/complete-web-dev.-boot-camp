@@ -1,0 +1,42 @@
+.tbtn{
+    margin: 9px 66px;
+    font-weight: bold;
+    cursor: pointer;
+}
+input {
+    outline: none;
+    height: 40px;
+    width: 90px;
+    background-color: rgb(165 159 159);
+    -webkit-appearance: none;
+    border-radius: 42px;
+    position: relative;
+    transition: 0.3s ease-out;
+    box-shadow: 1px 1px 2px rgb(206, 200, 200);
+}
+
+input::before {
+    content: '';
+    width: 44px;
+    height: 40px;
+    border-radius: 42px;
+    background-color: white;
+    position: absolute;
+    left: 0%;
+    box-shadow:inset 1px 1px 3px rgb(206, 200, 200);
+    transition: 0.3s ease-out  ;
+    top: 0%;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+input:checked {
+    background: #ff5e57;
+}
+
+input:checked::before {
+    right: 0%;
+    left: 50%;
+}

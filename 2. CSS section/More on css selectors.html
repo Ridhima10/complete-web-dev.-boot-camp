@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced css selectors</title>
+    <style>
+        p {
+            background-color: rgb(235, 207, 212);
+            color: blue;
+        }
+
+        li {
+            background-color: red;
+            color: white;
+        }
+        div li p{
+            border: 2px solid black;
+        }
+        div p{
+            border: 2px solid yellow;
+        }
+        /* div's direct child should be p */
+        div>p {
+            border: 2px solid blue;
+        }
+        /* div should be previous to p */
+        div+p{
+            border:2px solid rgb(121, 223, 90);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <p>helloooo there :)</p>
+            <ul>
+                <li>First list</li>
+                <li>
+                    <p> second list</p>
+                </li>
+                <li>third list</li>
+                <p>another para</p>
+            </ul>
+            <p>One more here :/</p>
+        </div>
+        <p>Last para for sure !!!</p>
+    </div>
+    <p>hi</p>
+</body>
+
+</html>

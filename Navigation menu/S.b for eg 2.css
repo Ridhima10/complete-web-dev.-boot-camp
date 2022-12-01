@@ -1,0 +1,26 @@
+input[type=text] {
+    border-radius: 20px;
+    width: 14%;
+    padding: 3px;
+    border: 1px solid rgb(82, 117, 223);
+    background:#1246a7 ;
+    outline: none;
+    color: black;
+    height: 16px;
+    font-weight: 600;
+    position: relative;
+    left: 8%;
+    margin-top: 10px;
+}
+input[type=button] {
+    background: none;
+    border: none;
+    position: relative;
+    left: 5.4%;
+    top: -2px;
+    outline: none;
+}    
+input[type=text]:hover {
+    background: rgb(238, 226, 226);
+    box-shadow: inset 2px 2px 3px black;
+}

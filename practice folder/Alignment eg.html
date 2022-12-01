@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        .container {
+            border: 2px solid red;
+            margin: 10px auto;
+            background-color: rgb(238, 163, 163);
+            width: 600px;
+            /* height: 1100px; */
+        }
+
+        .item {
+            border: 2px solid blue;
+            margin: 6px 6px 6px auto;
+            width: 600px;
+            background-color: rgb(131, 131, 196);
+            padding: 7px;
+            border-radius: 9px;
+          
+        }
+
+        #Clothes {
+            float: left;
+            width: 48%;
+            margin: 8px;
+            margin-top: 5px;
+        }
+
+        #Gamezone {
+            float: left;
+            width: 48%;
+        }
+
+        #Fastfood {
+            clear: both;
+            width: 97%;
+            margin: 8px 8px 8px 8px;
+        }
+
+        h3,
+        p {
+            text-align: justify;
+        }
+       .btn {
+            width: 184px;
+            margin: 12px;
+            height: 29px;
+            border-radius: 9px;
+           border-color: blue;
+            font-weight: bold;
+    background-color:rgb(131, 131, 196);   
+        }
+        .btn:hover,h3:hover{
+            color:red;
+            border-color: red;
+        }
+        h1:hover{
+            color: blue;
+        }
+        .item:hover{
+            border-color: red;
+        }
+        /* h3:hover{
+            color: red;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <center>
+
+            <h1>Wave Mall</h1>
+        </center>
+        <div id="Clothes" class="item">
+            <h3>Clothes</h3>
+            <p id="clothespara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nisi modi
+                quidem sapiente, corporis saepe rem at tenetur labore laborum error mollitia natus blanditiis earum
+                maiores minus ad eaque aspernatur laboriosam sed excepturi. Fugiat. </p>
+        </div>
+        <div id="Gamezone" class="item">
+            <h3>Gaming zone</h3>
+            <p id="Gamepara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nisi modi
+                quidem sapiente, corporis saepe rem at tenetur labore laborum error mollitia natus blanditiis earum
+                maiores minus ad eaque aspernatur laboriosam sed excepturi. Fugiat. </p>
+        </div>
+        <div id="Fastfood" class="item">
+            <h3>Fast food</h3>
+            <p id="fastfoodpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nisi modi
+                quidem sapiente, corporis saepe rem at tenetur labore laborum error mollitia natus blanditiis earum
+                maiores minus ad eaque aspernatur laboriosam sed excepturi. Fugiat. </p>
+        </div>
+        <center>
+            <button class="btn">CONTACT US </button>
+        </center>
+    </div>
+</body>
+
+</html>

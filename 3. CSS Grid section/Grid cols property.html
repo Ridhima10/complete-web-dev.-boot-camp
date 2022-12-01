@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        display:grid;
+        /* divide them into 3 columns acc. to given width */
+        /* grid-template-columns: 100px 100px 100px; */
+        /* grid-template-columns: 100px 100px 100px 100px 100px ; 5 cols are given here. You can insert as much you want */
+        /* grid-template-columns: 100px 400px auto; auto covers the rest of the space left */
+        /* grid-template-columns: 100px auto 100px; */
+        /* grid-template-columns: 1fr 4fr 2fr; divides the columns acc to the given ratio */
+        /* grid-template-columns: repeat(10,100px); it helps to create the columns easily. Here first value is the no. of cols and sec is their width  */
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 20px; /*specifies the gap of grid*/
+    }
+    .grid{
+        background-color: cornflowerblue;      
+        padding: 6px; 
+    }
+    </style>
+</head>
+<body>
+    <!-- div.grid{This is a grid-$}*10  -->
+    <div class="container">
+        <div class="grid">This is a grid-1</div>
+        <div class="grid">This is a grid-2</div>
+        <div class="grid">This is a grid-3</div>
+        <div class="grid">This is a grid-4</div>
+        <div class="grid">This is a grid-5</div>
+        <div class="grid">This is a grid-6</div>
+        <div class="grid">This is a grid-7</div>
+        <div class="grid">This is a grid-8</div>
+        <div class="grid">This is a grid-9</div>
+        <div class="grid">This is a grid-10</div>
+    </div>
+</body>
+</html>

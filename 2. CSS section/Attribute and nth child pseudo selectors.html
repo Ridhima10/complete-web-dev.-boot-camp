@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth child pseudo selectors</title>
+    <style>
+        input[type='text']{
+            background-color: rgb(233, 163, 177);
+        }
+        input[type='email']{
+            background-color: rgb(195, 236, 233);
+        }
+        input[type='number']{
+            background-color: rgb(129, 221, 152);
+        }
+        a[target]{
+            color: rgb(218, 27, 27);
+        }
+        a[target='_self']{
+           background-color: rgb(247, 174, 222);
+        }
+        li:nth-child(odd){
+            background-color: rgb(139, 231, 231);
+        }
+        li:nth-child(even){
+            background-color: rgb(167, 139, 231);
+        }
+        li:nth-child(4){
+            border: 2px solid blue;
+        }
+        li:nth-child(2n+0){
+            border: 2px solid rgb(235, 43, 43);
+        }
+        li:nth-child(3n+3){
+            border: 2px solid rgb(190, 235, 29);
+        }
+    </style>
+</head>
+<body>
+    <div>      
+     Name:   <input type="text"  name="name"> <br>
+      Phone number:  <input type="number" name="name">  <br>     
+    <a> Email:  <input type="email"  name="name"> </a>  
+    </div>
+    <ul>
+        <li> <a href="https://www.google.com" target="_blank">  Google</a> </li>
+        <li> <a href="hhtps://www.facebook.com " target="_self"> Facebook </a>  </li>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+      <li>Fourth</li>
+      <li>Fifth</li>
+      <li>Sixth</li>
+      <li>Seventh</li>
+      <li>Eighth</li>
+      <li>Ninth</li>
+      <li>Tenth</li>
+    </ul>
+</body>
+</html>

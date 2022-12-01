@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .container{
+            background-color: rgb(15, 15, 15);
+            height: 99vh;
+            width: 98vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 20px;
+            width: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:cornflowerblue ;
+        /* to use transition on a single property */
+            /* transition-property: background-color;
+            transition-duration: 10s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+          transition: all 10s ease-in-out 0.1s;
+          font-size: 2px;
+        }
+        .box:hover{
+            background-color: rgb(240, 121, 145);
+            color: rgb(10, 8, 8);
+            height: 200px;
+            width: 200px;
+            border-radius: 40px;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="box1">Hover here</div> -->
+        <div class="box">Helloooo shittuuuuu :)<div>
+    </div>
+</body>
+</html>

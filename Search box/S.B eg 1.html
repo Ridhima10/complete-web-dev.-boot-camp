@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            font-weight: bold;
+            outline: none;
+        }
+        input[type='text'] {
+            width: 11%;
+            height: 10px;
+            border-radius: 30px 0px 0px 30px;
+            background-color: black;
+            border: 2px solid black;
+            box-shadow: -1px -1px 2px black;
+            padding: 8px;
+            margin: 8px;
+            color: white;
+        }
+        input[type='submit'] {
+            width: 81px;
+            height: 30.2px;
+            position: relative;
+            left: -13px;
+            border-radius: 0px 30px 30px 0px;
+            background-color: #f44336;
+            border: 2px solid red;
+            font-size: 13px;
+            text-shadow: 1px 1px 2px rgb(231, 207, 207);
+            box-shadow: 1px 1px 3px red;
+        }
+        input[type='text']:hover {
+            box-shadow: -1px -1px 2px black, 1px 1px 3px black;
+            /* background-color: white; */
+        }
+        input[type='submit']:hover {
+            background-color: rgb(8, 8, 8);
+            box-shadow: 1px 1px 3px red;
+            color: red;
+        }
+        h2 {
+            margin-left: 20px;
+            text-shadow: 1px 1px 3px blue;
+        }
+        h2:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Search-box</h2>
+        <input type="text" placeholder="Type here...">
+        <input type="submit" value="&#128269;Search">
+    </div>
+</body>
+
+</html>

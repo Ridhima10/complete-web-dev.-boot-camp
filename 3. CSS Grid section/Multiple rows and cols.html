@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple rows and cols</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,2fr);
+            grid-template-rows: repeat(2,2fr);
+            grid-gap: 20px;
+        }
+        .item{
+            background-color: coral;
+            padding: 8px;
+
+        }
+        .item:first-child{
+            /* grid-column-start: 1; starts from 1 ends at 4
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+            grid-column: 1/2; /*starts from 1 ends at 2*/
+            grid-row: 1/4; /*starts from 1 ends at 4*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+    </div>
+</body>
+</html>

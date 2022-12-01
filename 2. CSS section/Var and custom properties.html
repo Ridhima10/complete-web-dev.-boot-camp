@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and custom variables</title>
+    <style>
+        /* variables always start with -- and you can name them according to your choice */
+        /* variables which are inserted in :root are called global variables and they can access to any local element */
+        :root{
+            --color:rgb(156, 24, 46); /*Global variables*/
+        }
+        /* local variables can only access to they block */
+        .box {
+            --box-color:rgb(140, 140, 221); /* local variables*/
+            width: 133px;
+            height: 133px;
+            border: 2px solid red;
+            background-color: var(--box-color);
+            margin: 8px;
+            box-shadow: 6px 5px 8px var(--color);
+        }
+        .container {
+            --container:4px solid grey;
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(240, 166, 236);
+            height: 700px;
+            width: 700px;
+            border: var(--container);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

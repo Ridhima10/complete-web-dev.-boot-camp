@@ -1,0 +1,12 @@
+#btn4{
+    border: none;
+    border-radius: 57px ;
+    /* background-image: linear-gradient(to left,#f1c40f,#d35400,#f1c40f);     */
+    background-image: linear-gradient(to left,#686de0,#eb4d4b,#686de0);    
+    color:  white;
+    transition: 0.6s;
+    background-size: 200%;
+}
+#btn4:hover{
+    background-position: right;
+}

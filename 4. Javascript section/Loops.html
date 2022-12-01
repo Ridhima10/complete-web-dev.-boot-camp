@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in javascript</title>
+</head>
+
+<body>
+    <script>
+        //For loop
+        let i = 0;
+        for (i = 0; i < 4; i++) {
+            console.log(i);
+        }
+
+        //How to print an array using for loop
+        let friends = ["janvi", "preeti", "simran", "ridhima", "harshit"];
+        // for (let index = 0; index < friends.length; index++) {
+        //     console.log("Heloooo" + " "+ friends[index]);            
+        // }
+
+        // forEach loop (modern javascript)
+        // friends.forEach(function f(elements) {
+        //     console.log("Heloooo "+ elements);
+        // });
+
+        //for "Of" loop (modern javascript)
+        //for (elements of friends) {
+        //console.log("heyyyyy "+ elements);
+        //}
+
+        //for "in" loop
+        let employee = {
+            name: "xyz",
+            salary: 4,
+            rollno: 2948,
+        }
+        //Use this loop to iterate over objects in javascript
+        for (key in employee) {
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        let arr = [1, 2, 3, 4, 5, 6];
+        for (let index = 0; index < arr.length; index++) {
+            console.log(`Number is` + arr[index]);
+        }
+
+        //While loop in js
+        let a=0;
+        while(a<4){
+            console.log(`${a} is less than 4`);
+            a++;
+        }
+
+        //Do-While loop in js
+        //it will print once for sure even if the value is greater than 0.
+        let x=0;
+        do{
+            console.log(`${x} is less than 4`);
+            x++;
+        }while(x<4);
+
+
+    </script>
+</body>
+</html>

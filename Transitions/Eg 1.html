@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: black;
+            height: 54vh;
+            width: 54vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .box {
+            height: 80px;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(64, 104, 179);
+            transition: all 5s ease-in-out 0.1s;
+            font-size: 2px;
+            /* background-color: rgb(240, 161, 161); */
+            margin: 7px;
+        }
+
+        .box:hover {
+
+            color: black;
+            overflow: none;
+            padding: 5px;
+            height: 80px;
+            width: 80px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: bolder;
+
+        }
+
+        #box1:hover {
+            background-color: rgba(236, 106, 167, 0.856);
+            box-shadow: 3px 3px 4px white;
+        }
+
+        #box2:hover {
+            background-color: rgb(70, 112, 204);
+            box-shadow: 3px 3px 4px white;
+        }
+
+        #box3:hover {
+            background-color: rgb(230, 54, 54);
+            box-shadow: 3px 3px 4px white;
+        }
+
+        p {
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 15%;
+            margin-right: 10%;
+            color: white;
+        }
+
+        p:hover {
+            color: rgb(0, 204, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>HOVER HERE &RightArrowBar;</p>
+        <div class="box" id="box1">Happyyyyy </div>
+        <div class="box" id="box2">Birthday <br> Drishti :) </div>
+        <div class="box" id="box3">Love you lotsss &hearts; </div>
+    </div>
+</body>
+
+</html>

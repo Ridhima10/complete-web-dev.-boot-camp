@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Strings and string method |</title>
+</head>
+
+<body>
+    <div class="cont">
+        <div id="container"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ratione, mollitia harum deserunt sapiente
+            eligendi nostrum eum velit perspiciatis debitis cumque assumenda laboriosam nesciunt, sed minus
+            exercitationem facilis repudiandae ipsa.</p>
+    </div>
+    <script>
+        //we can use single or double quotes depending upon the code.
+        //if the code container single quotes inside it, then use double quotes and vice-versa.
+        // var string="this"; 
+        // var string='thi"s';
+        var string1 = 'this';
+        console.log(string1);
+
+
+        var string2 = "is";
+        var string3 = "a";
+        var string4 = "javascript";
+        var string5 = "tutorial";
+        console.log(string1 + string2 + string3 + string4 + string5); //it will concatenate(merge) all the strings
+
+
+
+        // whenever you want to use both single and double quotes then use backticks i.e `` . dollar symbol will work only in backticks
+        var name1 = `welcome`;
+        var name2 = `to`;
+        var name3 = `my`;
+        var name4 = `"webpage"`;
+        //${} will work as "fill in the blanks here".
+        var name = `${name1} ${name2} ${name3} ${name4}. I'll add some more text later .see you "soon" :)`;
+        //it will print the values of variable 'name'.
+        console.log(name);
+
+
+        //.length is a function which calculate the length of string given above.
+        var len = name1.length;
+        console.log(`Length of name1 is: ${len}`);
+
+
+
+        // escape sequence character : \n(newline) \t(it will give a space between values) \\(it will print a slash)
+        console.log("Helloooo\n World");
+        console.log("Helloooo\t World");
+        console.log("Helloooo\\ World");
+
+
+
+        //how to add content in webpage using javascript
+        document.getElementById('container').innerHTML = '<h2> This is a heading </h2>'
+    </script>
+</body>
+
+</html>

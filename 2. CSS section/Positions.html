@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* types of positions: static (default), relative, absolute, fixed and sticky */
+        .container {
+            border: 2px solid black;
+            background-color: rgb(173, 38, 60);
+            height: 1000px;
+        }
+
+        .box {
+            border: 2px solid rgb(15, 190, 83);
+            height: 82px;
+            width: 73px;
+            margin: 4px;
+            border-radius: 12px;
+            display: inline-block;
+            /*for keeping it in one line*/
+        }
+
+        #box2 {
+            /* relative: Positions the element relative to its normal position and will leave a gap at its normal position */
+            position: relative;
+            top: 13px;
+            left: 24px;
+            background-color: cornflowerblue;
+        }
+
+        #box3 {
+            /* absolute: Positions the element relative to the position to its first parent */
+            /* position: absolute;
+           top: 22px;
+           left: 12px; */
+            /* sticky: Sticks will be fixed only till the end of the container and we can only move it from the top side*/
+           position: sticky;
+           top: 12px;
+        }
+        #box4{
+            /* fixed: fixed will be fixed until the end of the web page.*/
+            position: fixed;
+            right: 33px;
+        }
+        #box5{
+            position: absolute;
+            top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+
+    </div>
+</body>
+
+</html>

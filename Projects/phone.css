@@ -1,0 +1,456 @@
+@media only screen and (min-width:1000px) and (max-width:1200px){
+    #navbar{
+        display: flex;
+    }
+    #navbar ul li a {
+        margin: 7px 7px;
+        padding: 12px 5px;
+        font-size: 20px;
+    }
+    /* home */
+    #home .primary{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 95px;     
+    }
+    #home .secondary{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 97px;
+    }
+    #home p{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        vertical-align: ce;    
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    #navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 130%;
+        z-index: -1;
+    }
+    #home .btn{
+        position: relative;
+        margin-top: 0px;
+        height: 43px;
+        left: 42%;
+        width: 17.5%;
+        font-size: 13px;
+        font-weight: 600;
+        /* position: relative;
+        margin-top: 19px;
+        margin-bottom: 80px;
+        height: 43px;
+        left: 34%;
+        width: 31.5%;
+        font-size: 13px;
+        font-weight: 600; */
+    }
+    
+    /* sec2 */
+    #logo2 .fab {
+        position: relative;
+        top: 78px;
+        right: 21px;
+        margin: 5px 68px;
+        padding: 21px 10px;
+        color: white;
+        font-size: 1.9rem;
+    }
+    #sec2 .list ul li {
+        padding: 5px 40px;
+        font-size: 17px;
+    }
+    #sec2 #app .fab {
+        font-size: 28px;
+    }
+    
+    /* footer */
+    #footer #fl li {
+    position: relative;
+        padding-top: 102px;
+        padding-left:  6px;
+        left: 8%;
+        font-size: 12px;   
+    }
+    #footer::before{
+        content: "";
+        background-color:black;
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        z-index: -1;
+    }
+} 
+@media only screen and (min-width:780px) and (max-width:1000px){
+    #navbar{
+        display: flex;
+    }
+    #navbar ul li{
+        display: none;
+    }
+    /* home */
+    #home .primary{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 95px;     
+    }
+    #home .secondary{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 97px;
+    }
+    #home p{
+        display: flex;
+        text-align: center;
+        justify-content: center;  
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    #navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 130%;
+        z-index: -1;
+    }
+    #home .btn{ 
+        /* position: relative;
+        margin-top: 0px;
+        height: 43px;
+        left: 42%;
+        width: 17.5%;
+        font-size: 13px;
+        font-weight: 600; */
+        position: relative;
+        margin-top: 19px;
+        margin-bottom: 80px;
+        height: 43px;
+        left: 34%;
+        width: 31.5%;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    
+    /* sec2 */
+    #sec2 .list ul li {
+        font-size: 17px;
+    }
+    #logo2 .fab {
+        position: relative;
+        top: 10px;
+        right: 47px;
+    }
+    #sec2 #app .fab {
+        position: relative;
+        top: 404px;
+        left: 5%;
+    }
+   
+     /* footer */
+    #footer #fl{
+        display: flex;
+        text-align: center;
+        justify-content: center;     
+        padding-top: 102px;
+    }
+    #footer #fl li {
+        font-size: 12px;   
+    }
+    #footer::before{
+        content: "";
+        background-color:black;
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        z-index: -1;
+    }
+    #footer #LL .far {
+        position: absolute;
+        left: 84%;
+    }
+}
+@media only screen and (min-width:480px) and (max-width:780px){
+    #navbar{
+        display: flex;
+    }
+    #navbar ul li{
+        display: none;
+    }
+    /* home */
+    #home .primary{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 60px;  
+        padding-top: 78px;   
+    }
+    #home .secondary{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 62px;
+    }
+    #home p{
+        display: flex;
+        text-align: center;
+        justify-content: center;  
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-top: 30px;
+    }
+    #navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 130%;
+        z-index: -1;
+    }
+    #home .btn{ 
+        position: relative;
+        margin-top: 19px;
+        margin-bottom: 80px;
+        height: 43px;
+        left: 34%;
+        width: 31.5%;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    /* sec 2 */
+    #logo2 .fab {
+        position: relative;
+        top: 10px;
+        right: 47px;
+    }  
+    #sec2 .list ul li {
+        font-size: 17px;
+    }
+    #sec2 .list ul h5{
+        color: rgb(134, 133, 134);
+        position: relative;
+        left:6px;
+    }
+    #sec2 .list #first-li {
+        position: absolute;
+        top: 100px;
+        left: 20px;
+    }
+    #sec2 .list #first-li li {
+        padding: 0%;
+        position: relative;
+        right: 1px;
+    }
+    #sec2 .list #sec-li {
+        position: absolute;
+        top: 268px;
+        left: 20px;
+    }
+    #sec2 .list #sec-li li{
+        padding: 0px;
+        position: relative;
+        right: 1px;
+    }
+    #sec2 .list #third-li {
+        position: absolute;
+        top: 493px;
+        left: 20px;
+    }
+    #sec2 .list #third-li li{
+        padding: 0px;
+        position: relative;
+        right: 1px;
+    }
+    #sec2 #app {
+        position: absolute;
+        top: 773%;
+        left: -3%;    
+    }
+    #sec2 #app .fab {
+        position: relative;
+        top: 60px;
+        left: 43%;
+    }
+    /* footer */
+    #footer #fl{
+        display: flex;
+        text-align: center;
+        justify-content: center;     
+        padding-top: 102px;
+    }
+    #footer #fl li {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        position: relative;
+        top: 554%;
+        left: 5%;
+        font-size: 9px;
+    }
+
+    #footer::before{
+        content: "";
+        background-color:black;
+        position: absolute;
+        width: 100%;
+        height: 138%;
+        z-index: -1;
+    }
+    #footer #LL .far {
+        position: absolute;
+        left: 76%;
+        top: 232%;
+    }
+    #footer #LL .fas {
+        position: absolute;
+        left: 87%;
+        top: 228%
+    }
+}
+@media only screen and (min-width:300px) and (max-width:480px){
+    #navbar{
+        display: flex;
+        overflow: hidden;
+    }
+    #navbar ul li{
+        display: none;
+    }
+      /* home */
+    #home .primary{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 36px;
+        padding-top: 92px;   
+    }
+    #home .secondary{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 36px;
+    }
+    #home p{
+        display: flex;
+        text-align: center;
+        justify-content: center;  
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-top: 21px;
+    }
+    #navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 130%;
+        z-index: -1;
+    }
+    #home .btn{ 
+        position: relative;
+        margin-top: 19px;
+        margin-bottom: 80px;
+        height: 43px;
+        left: 34%;
+        width: 31.5%;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    /* sec 2 */
+    #logo2 .fab {
+        position: relative;
+        top: 10px;
+        right: 47px;
+    }
+    #sec2 .list ul li {
+        font-size: 17px;
+    }
+    #sec2 .list ul h5{
+        color: rgb(134, 133, 134);
+        position: relative;
+        left:6px;
+    }
+#sec2 .list #first-li {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+#sec2 .list #first-li li {
+    padding: 0%;
+    position: relative;
+    right: 1px;
+}
+#sec2 .list #sec-li {
+     position: absolute;
+     top: 268px;
+     left: 20px;
+}
+#sec2 .list #sec-li li{
+     padding: 0px;
+     position: relative;
+     right: 1px;
+}
+    #sec2 .list #third-li {
+        position: absolute;
+        top: 493px;
+        left: 20px;
+    }
+    #sec2 .list #third-li li{
+        padding: 0px;
+        position: relative;
+        right: 1px;
+    }
+    #sec2 #app {
+        position: absolute;
+        top: 773%;
+        left: -3%;   
+    }
+    #sec2 #app .fab {
+        position: relative;
+        top: 60px;
+        left: 43%;
+    }
+/* footer */
+    #footer #fl{
+        display: flex;
+        text-align: center;
+        justify-content: center;     
+        padding-top: 102px;
+    }
+    #footer #fl li {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        position: relative;
+        top: 554%;
+        left: 5%;
+        font-size: 9px;
+    }
+    #footer::before{
+        content: "";
+        background-color:black;
+        position: absolute;
+        width: 100%;
+        height: 138%;
+        z-index: -1;
+    }
+    #footer #LL .far {
+        position: absolute;
+        left: 76%;
+        top: 232%;
+    }
+    #footer #LL .fas {
+        position: absolute;
+        left: 87%;
+        top: 228%
+    }
+}

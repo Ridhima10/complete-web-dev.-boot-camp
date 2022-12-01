@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7fc361caa.js" crossorigin="anonymous"></script>
+    <title>sub-list navigation menu</title>
+    <style>
+        header::before {
+            content: "";
+            background: url("Cf.jpg") no-repeat center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            top: 0%;
+            left: 0%;
+            right: 0%;
+            bottom: 0%;
+            opacity: 0.9;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 9px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 26px;
+            color: rgb(241, 231, 231);
+        }
+
+        li {
+            list-style: none;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        li:hover {
+            color: rgb(241, 117, 165);
+        }
+
+        input[type=text] {
+            position: relative;
+            background-color: rgb(248, 226, 226);
+            border: 2px solid rgb(235, 223, 223);
+            left: 63px;
+            margin-bottom: 6px;
+            outline: none;
+            color: white;
+            margin-top: -2px;
+        }
+
+        input[type=button] {
+            position: relative;
+            background-color: rgb(255, 246, 246);
+            border: 2px solid rgb(243, 231, 231);
+            left: -33px;
+            height: 21px;
+            margin-top: -2px;
+            font-size: 12px;
+        }
+        .sub-menu{
+            display: none;
+        }
+        ol li{
+            padding:7px;
+            padding-right: 27px;
+            color: white;
+        }
+      .nav ul li:hover .sub-menu{
+            display: block;         
+            position: absolute;
+            background-color: rgb(13, 13, 14);
+            margin-top: 7.5px;
+            margin-left: -15px; 
+        }     
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li> <i class="fas fa-home"></i> HOME </li>
+                <li> <i class="fas fa-user"></i> ABOUT &nbsp; US
+                    <div class="sub-menu">
+                        <ol>
+                            <li>Tea</li> 
+                            <li>Coffee</li>
+                            <li>Ice-Tea</li>
+                        </ol>
+                    </div>
+                </li>
+                <li> <i class="fas fa-taxi"></i> SERVICES </li>
+                <li> <i class="fas fa-coffee"></i> BLOG </li>
+                <li> <i class="fas fa-phone-alt"></i> CONTACT &nbsp; US </li>
+                <li> <i class="far fa-images"></i> GALLERY </li>
+                <input type="text" id="SB" placeholder="Type here..">
+                <input type="button" value="&#128269; ">
+            </ul>
+        </div>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings function</title>
+    <script>
+        var string='this is a string';
+        console.log(string);
+
+        //First occurance of a substring
+        var position= string.indexOf('a');
+        console.log(position);
+        var position= string.indexOf('is');
+        console.log(position);
+
+        //Last occurance of a substring
+        var position=string.lastIndexOf('is');
+        console.log(position);
+
+        //Substring from a string- Slice,substr and substring method
+        var pos=string.slice(1,6);
+        console.log(pos); //it will print values from index 1 to 5.
+
+        var substr=string.substring(1,6); //it will print values from 1 to 5.
+        console.log(substr);
+
+        var substr1=string.substr(1,6);
+        console.log(substr1);  //it will print values from index 1 to 6.
+
+        //To replace a string
+        var rep=string.replace('this' , 'It');
+        console.log(string);
+        console.log(rep);
+
+        //change the text in uppercase and lowercase
+        console.log(string.toUpperCase());
+        console.log(string.toLowerCase());
+
+        //to concatenate a string
+        var newstr=string.concat('new string');
+        console.log(newstr);
+
+        //white spaces
+        var newstr1= "   this    is    a      string         ";
+        console.log(newstr1);
+        console.log(newstr1.trim()); //it will trim spaces from start and end
+
+        var char=string.charAt(2);
+        console.log(char); //it will give character at given index
+        var char=string.charCodeAt(2); //it will give address of given index.
+        console.log(char);
+
+        console.log(string[3]); //this is also a method to fetch the character of the given index.
+    </script>
+</head>
+<body>
+</body>
+</html>

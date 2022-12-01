@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+        }
+
+        header {
+            width: 160%;
+            text-align: center;
+            padding: 15px;
+            border-radius: 30px 30px 0px 0px;
+            color: rgb(14, 12, 12);
+            font-size: 24px;
+            font-weight: bold;
+            background:linear-gradient(#f9ca24,#eb4d4b);
+        }
+
+        footer {
+            width: 160%;
+            padding: 15px;
+            border-radius: 0px 0px 30px 30px;
+            background:linear-gradient(#eb4d4b,#f9ca24 );
+        }
+
+        span {
+            width: 130%;
+            padding: 22px;
+        }
+
+        input[type='checkbox'] {
+            position: absolute;
+            visibility: hidden;
+            width: 0%;
+            height: 0%;
+        }
+
+        .do {
+            display: block;
+            width: 135%;
+            height: 0px;
+            padding: 20%;
+            padding-top: 11px;
+            position: relative;
+            background-color: white;
+            color: white;
+            transition: 0.3s ease-in-out;
+            border: 2px solid rgb(255, 174, 0);
+        }
+
+        .do:hover {
+            transform: translateX(-10px);
+            background:linear-gradient(#f9ca24,#eb4d4b );
+        }
+
+        .do::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgb(17, 16, 16);
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 6px;
+            margin-right: 9px;
+        }
+
+        .do::after {
+            content: '';
+            left: 0%;
+            top: 0%;
+            position: absolute;
+            height: 100%;
+            background-color: red;
+        }
+
+        .do:hover::after {
+            width: 5px;
+        }
+
+        em {
+            color: black;
+            position: absolute;
+            left: 37px;
+           opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+        input[type=checkbox]:checked+  label span em {
+            opacity: 1;
+          
+        }
+       .To-do .check label .do {
+           position: relative;
+           transition: 0.3s ease-in-out;
+           color: rgb(189, 27, 54);
+       }
+       input[type=checkbox]:checked+  label .do {
+            color: rgb(80, 78, 78);
+           background:linear-gradient(#f9ca24,#eb4d4b );
+       }
+     .To-do .check label .do::after{
+           content: '';
+           position: absolute;
+           background-color: rgb(16, 17, 15);
+           height: 1px;
+           left: 0%;
+           right: 100%;
+           width: 0%;
+           top: 50%;
+           transition: 0.3s ease-in-out;
+       }
+       input[type=checkbox]:checked+  label .do::after{
+           width: 50%;
+           left: 21%;
+           right: 0%;
+       }
+    </style>
+</head>
+
+<body>
+    <section class="To-do">
+        <header>To-Do List</header>
+        <div class="check">
+            <input type="checkbox" id="First">
+            <label for="First">
+                <span class="do"> <em> &#10004; </em> Morning run </span>
+            </label>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="Second">
+            <label for="Second">
+                <span class="do"> <em> &#10004; </em> Complete your work</span>
+            </label>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="Third">
+            <label for="Third">
+                <span class="do"> <em> &#10004; </em> Go shopping</span>
+            </label>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="Fourth">
+            <label for="Fourth">
+                <span class="do"> <em> &#10004; </em> Take out trash</span>
+            </label>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="Fifth">
+            <label for="Fifth">
+                <span class="do"> <em> &#10004; </em> Read book</span>
+            </label>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="Sixth">
+            <label for="Sixth">
+                <span class="do"> <em> &#10004; </em> Do exercise</span>
+            </label>
+        </div>
+        <footer></footer>
+    </section>
+</body>
+
+</html>

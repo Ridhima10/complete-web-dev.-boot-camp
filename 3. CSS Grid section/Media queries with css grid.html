@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .item {
+            padding: 10px;
+            border: 2px solid rgb(238, 231, 231);
+            background-color: honeydew;
+            border-radius: 23px;
+        }
+
+        @media only screen and (max-width: 300px) {
+            body {
+                background-color: rgb(252, 150, 150);
+
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            .item {
+                text-align: center;
+                border: 2px solid rgb(226, 83, 83);
+            }
+            span{
+                display: block;
+                text-align: center;
+                margin: 4px;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width: 500px) {
+            body {
+
+                background-color: rgb(157, 187, 243);
+
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            .item {
+                text-align: center;
+                border: 2px solid rgb(46, 107, 177);
+            }
+            span{
+                display: block;
+                text-align: center;
+                margin: 4px;
+            }
+        }
+
+        @media only screen and (min-width: 500px) and (max-width: 800px) {
+            body {
+
+                background-color: rgb(231, 144, 173);
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            .item {
+                text-align: center;
+                border: 2px solid rgb(231, 81, 144);
+            }
+            span{
+                display: block;
+                text-align: center;
+                margin: 4px;
+            }
+        }
+
+        @media only screen and (min-width: 800px) {
+            body {
+
+                background-color: rgb(187, 238, 223);
+
+            }
+
+            .item {
+                border: 2px solid rgb(40, 207, 171);
+            }
+            span{
+                margin: 3px;
+            }
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="item">
+            <span> HOME</span>
+            <span>ABOUT</span>
+            <span> CONTACT US</span>
+            <span> SERVICES</span>
+        </nav>
+        <section class="item">
+            <h1>THIS IS SECTION</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A delectus praesentium quos deleniti deserunt, ut,
+            placeat possimus dicta velit saepe eveniet itaque mollitia ullam assumenda dolorem. Ipsam similique dicta,
+            commodi earum ea quae maiores deleniti sint, voluptas atque ullam magnam possimus. Cupiditate eos repellat
+            unde velit in illo harum aliquid totam ad molestiae deleniti vitae non sequi magnam autem a assumenda
+            veniam, modi consequuntur ratione, quaerat amet dicta. Facilis similique qui architecto reprehenderit
+            dolorem, accusamus ipsum fugit obcaecati impedit eius ab, dolore tenetur quae distinctio et incidunt, soluta
+            nihil quam. Hic, quas molestias excepturi quam eveniet delectus corrupti rem inventore?
+        </section>
+        <aside class="item">
+            <h1>THIS IS ASIDE</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum cum quaerat eveniet dolores repellendus.
+            Eum esse neque sed, nostrum atque distinctio harum quod, iste est alias ut enim quisquam vero necessitatibus
+            ad? Vitae iure officia quidem sapiente nobis, non sequi sint incidunt nostrum ab adipisci id eligendi et
+            excepturi totam corporis temporibus dignissimos, placeat natus delectus porro sit blanditiis qui. Excepturi
+            quas esse ipsam deleniti reiciendis cupiditate, voluptas nisi veritatis, nesciunt mollitia corrupti hic in
+            aut dignissimos ut ad placeat? Sint, numquam repudiandae molestiae quisquam explicabo iste laborum
+            blanditiis fugit sit id totam dolorum placeat nam nulla corporis, illo laudantium.
+        </aside>
+    </div>
+    <footer class="item">Lorem ipsum dolor sit amet.</footer>
+</body>
+
+</html>

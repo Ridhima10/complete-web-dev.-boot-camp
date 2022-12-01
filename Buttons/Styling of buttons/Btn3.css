@@ -1,0 +1,40 @@
+#btn3{
+    background: none;
+    color:#e84393;
+    border:2px solid  #e84393;
+    transition: 1s;
+    position: relative;
+    overflow: hidden;
+}
+#btn3::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    height:0%;
+    width: 100%;
+    background: #e84393;
+    top: 0%;
+    border-radius: 0 0 50% 50%; 
+    transition: 0.7s;
+    /* z-index: -1;  */
+}
+#btn3:hover{
+   color:  white;
+   text-overflow: none;
+}
+#btn3:hover::before{
+    
+    height: 180%;
+    color:  rgb(15, 15, 51);
+}
+#btn3::after{
+    content: "BUTTON 3";
+    position: absolute;
+    color:#e84393 ;
+    right: 22px;
+}
+#btn3:hover::after{
+    color:  white;
+    font-weight: bold;
+
+}

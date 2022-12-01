@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navigating DOM</title>
+        <style>
+            .container {
+                border: 2px solid red;
+                margin: 3px 0px;
+                background: cyan;
+                padding: 9px;
+            }
+
+            .bg-primary {
+                background-color: blueviolet;
+            }
+
+            .text-success {
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container" id="main">
+            <ul id="nav">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>About Us</li>
+            </ul>
+        </div>
+        <div class="container">
+            Another container <br>
+            <button id="click">Click Here</button>
+        </div>
+        <script>
+            let main = document.getElementById('main'); //for id
+            console.log(main); //it will fetch the code of id main from Dom to console
+
+            let nav = document.getElementById('nav');
+            console.log(nav);
+            //you can also write nav.innerHTMl in the console to fetch the code
+
+            let containers = document.getElementsByClassName('container'); //for class
+            console.log(containers);
+
+            let selector = document.querySelector('.container');  //it will fetch the given query but only where it is applied first
+            console.log("selector returns ", selector);
+
+            let selectors = document.querySelector('#nav');  //it will fetch the given query but only where it is applied first
+            console.log("selector returns ", selectors);
+
+            let sel = document.querySelector('#nav>li');  //it will fetch the given query but only where it is applied first
+            console.log("selector returns ", sel);
+
+            let sels = document.querySelectorAll('.container');  //it will fetch the given query where it has been applied
+            console.log("selector returns ", sels);
+
+
+            let element = document.getElementById('click'); //to fetch a particular id
+            console.log(element);
+
+            let elementclass = document.getElementsByClassName("container"); //to fetch a particular class
+            console.log(elementclass);
+            //elementclass[0].style.background="yellow" //0 represents the first code with this class
+            elementclass[0].classList.add("bg-primary"); //to add a class
+            elementclass[0].classList.add("text-success");
+            elementclass[0].classList.remove("text-success"); //to remove a class
+            console.log(elementclass[0].innerHTML); //to access the html of particular element
+            console.log(elementclass[0].innerText); //to access the text of particular element
+
+
+            tagname=document.getElementsByTagName('div') //it will show all the divs
+            console.log(tagname);
+
+            // to Add a child
+            createdelement=document.createElement('p');
+            createdelement.innerText="Helooooooooooo"
+            tagname[0].appendChild(createdelement);
+
+            //to replace a child
+            CR2=document.createElement('b');
+            CR2.innerText="Bold Text";
+            tagname[0].replaceChild(CR2,createdelement);
+
+            //to remove a child
+            tagname[0].removeChild(CR2)
+        </script>
+    </body>
+
+</html>

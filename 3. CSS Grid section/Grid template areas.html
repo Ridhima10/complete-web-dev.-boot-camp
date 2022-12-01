@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid template areas</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .item{
+            background-color: rgb(204, 230, 252);
+            border:2px solid rgb(143, 143, 231);
+            padding: 12px;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home about Contact Us Services
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aperiam ex porro tempore libero provident possimus architecto cum! Maxime, eveniet tenetur atque quos reprehenderit, quod at, tempora assumenda explicabo doloribus voluptas nostrum minus sint. Soluta amet delectus nesciunt laborum hic? Quisquam omnis pariatur quibusdam corporis eveniet obcaecati repellat rem iure ipsum sapiente mollitia perspiciatis, recusandae dolorum quod soluta nisi ex temporibus rerum et illum. Quaerat ab cupiditate tenetur, autem quos, eos reprehenderit consequatur, maiores assumenda repudiandae praesentium delectus exercitationem perferendis soluta omnis dolore architecto ipsum. Maiores quisquam nulla quo placeat ad explicabo modi provident voluptatibus. Eaque fugit molestias ipsa enim delectus facilis id totam aliquid ullam iusto unde magni harum maiores consequuntur vitae, quis, corporis sunt voluptates temporibus! Facere maxime nulla cupiditate est omnis a qui? Dicta numquam, modi accusantium labore sequi voluptatem maiores explicabo aliquid, atque ad nihil. Quo fugiat consequatur necessitatibus non quaerat quidem deserunt unde minus reprehenderit hic neque illo beatae culpa tempore nemo molestias incidunt nostrum blanditiis natus magni et nihil, labore id. Perspiciatis harum nisi aut saepe deleniti dolorem, veritatis iusto suscipit quidem asperiores doloremque, exercitationem nostrum non soluta deserunt. Ex dolor sequi iure soluta id laborum autem minima molestiae natus, eaque assumenda iusto eos.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolor, nihil delectus nisi alias magnam rem recusandae. Tempore voluptate quo repudiandae commodi quia consectetur necessitatibus neque iusto vitae velit? Atque a consequuntur iusto cumque eaque corporis rem quidem sint exercitationem earum harum nam inventore error, doloribus qui architecto corrupti magnam consequatur aut totam quasi! Corrupti beatae dolor ducimus incidunt alias cum ipsum, doloribus aut molestias modi placeat facilis commodi repudiandae, numquam amet quaerat necessitatibus voluptate deserunt ad officiis. Vero in ullam dolore. Quas quasi explicabo sed iusto dignissimos enim facilis porro? Maiores reprehenderit facere accusamus doloremque ipsum sequi maxime aliquam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto assumenda consectetur fugit voluptates mollitia inventore, distinctio eos neque doloribus deleniti minus molestiae laboriosam praesentium libero qui! Sequi deserunt natus error eaque voluptatem, rem fugiat earum dolores voluptate vel eveniet, libero vitae nesciunt magnam nobis nemo culpa? Laborum totam consectetur quae!
+        </div>
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis architecto corporis laboriosam autem error adipisci voluptate sit cum quod illo!lorem20 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias minus praesentium magni fugit tempora, modi sed aperiam ipsam? Pariatur, odit.
+        </footer>
+    </div>
+</body>
+</html>

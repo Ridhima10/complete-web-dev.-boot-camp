@@ -1,0 +1,126 @@
+<!-- NAME-Ridhima Jain, CLASS ROLL NO-7005 -->
+<!-- WRITE A CODE IN HTML TO DESIGN A REGISTRATION FORM OF COLLEGE -->
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h3>Ridhima 7005</h3>
+    <form action="backend.php">
+        <h1 > REGISTRATION FORM FOR G.G.M SCIENCE COLLEGE </h1>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="FirstName" id="name" size="7" maxlength="19" placeholder="First-name"> &nbsp;
+            <input type="text" name="Lastname" id="name" size="7" maxlength="19" placeholder="Last-name">
+        </div>
+        <br>
+        <div>
+            <label for="Fname">Father's name:</label>
+            <input type="text" name="Name" id="Fname">
+        </div>
+        <br>
+        <div>
+            <label for="Mname">Mother's name:</label>
+            <input type="text" name="Name" id="Mname">
+        </div>
+        <br>
+        <div>
+            <label for="Gender">Gender:</label>
+            <input type="radio" name="Gen" id="Gender"> Male
+            <input type="radio" name="Gen" id="Gender"> Female
+            <input type="radio" name="Gen" id="Gender"> Other
+        </div>
+        <br>
+        <div>
+            <label for="D.O.B">Date of birth:</label>
+            <input type="date" id="D.O.B">
+        </div>
+        <br>
+
+        <div>
+            <label for="email">Email id:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="Password" id="password">
+        </div>
+        <br>
+        <div>
+            <label for="number">Mobile number:</label>
+            <input type="text" name="Mno." id="number" size="1" value="+91" maxlength="3">
+            <input type="number" name="Mno." id="number" size="11">
+        </div>
+        <br>
+        <div>
+            <label for="Address">Address:</label>
+            <br> <textarea id="Address" cols="50" rows="3"></textarea>
+        </div>
+        <br>
+        <label for="Course">Course applied for:</label>
+        <br> <select id="Course" multiple>
+            <option>BCA</option>
+            <option>B.Sc</option>
+            <option>English hons.</option>
+            <option>Maths hons.</option>
+            <option>Physics hons.</option>
+            <option>Chemistry hons.</option>
+        </select>
+        </div>
+        <br>
+        <br>
+        <label for="Qualification">Qualification:</label>
+        <table border="1" cellpadding="4" cellspacing="2">
+            <tr>
+                <th>SNo. examination</th>
+                <th>School name</th>
+                <th>City</th>
+                <th>Percentage</th>
+                <th>Year of passing</th>
+            </tr>
+            <tr>
+                <th>Class X</th>
+                <td> <input type="text" id="Qualification"> </td>
+                <td> <input type="text" id="Qualification"> </td>
+                <td> <input type="text" id="Qualification"> </td>
+                <td> <input type="text" id="Qualification"> </td>
+            </tr>
+            <tr>
+                <th>Class XII</th>
+                <td> <input type="text" id="Qualification"> </td>
+                <td> <input type="text" id="Qualification"> </td>
+                <td> <input type="text" id="Qualification"> </td>
+                <td> <input type="text" id="Qualification"> </td>
+            </tr>
+        </table>
+        <div>
+            <br>
+            <div>
+                <label for="Fileupload">Upload Marksheet of X:</label>
+                <input type="file" name="Marksheet of X" id="Fileupload" accept="document">
+            </div>
+            <br>
+            <div>
+                <label for="Fileupload">Upload Marksheet of XII:</label>
+                <input type="file" name="Marksheet of XII" id="Fileupload" accept="document">
+            </div>
+            <br>
+            <div>
+                <label for="A.A">Additional activities:</label> &nbsp;
+                <input type="checkbox" id="A.A"> NCC &nbsp;
+                <input type="checkbox" id="A.A"> NSS &nbsp;
+                <input type="checkbox" id="A.A"> Debate club &nbsp;
+                <input type="checkbox" id="A.A"> Dance club &nbsp;
+                <input type="checkbox" id="A.A"> Music club
+            </div>
+            <br>
+            <button type="submit">SUBMIT</button> &nbsp;
+            <button type="reset">RESET</button>
+    </form>
+</body>
+
+</html>

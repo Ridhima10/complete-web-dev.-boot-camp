@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow functions</title>
+  </head>
+
+  <body>
+    <div class="container" id="cont">
+      <p>Hello world</p>
+    </div>
+    <script>
+      //Normal way to call a function
+
+      // function greet() {
+      //     console.log("good morning");
+      // }
+      // greet();
+
+      //Arrow Fuctions
+      //   greet = () => {
+      //     console.log('good morning everyone');
+      //   };
+      //   greet();
+
+      greet = () => console.log('good morning everyone'); //shortcut
+      greet();
+
+      //they are commonly used in settimeout
+      setTimeout(() => {
+        console.log('we are inside settimeout');
+      }, 3000);
+
+      //   examples
+      let sum = (a, b) => {
+        return a + b;
+      };
+
+      let sum2 = (a, b) => a + b; //shortcut
+
+      let half = (a) => a / 2; //shortcut
+
+      //   let obj1 = {
+      //     names: ['Ridhi', 'Abhay', 'Chahat', 'Isha'],
+      //     says() {
+      //       this.names.forEach((student) => {
+      //         console.log('Heloooooo ' + student);
+      //       });
+      //     },
+      //   }
+      //   obj1.says();
+
+      //   let obj1 = {
+      //       greeting:"Good morning",
+      //     names: ['Ridhi', 'Abhay', 'Chahat', 'Isha'],
+      //     says() {
+      //       this.names.forEach((student) => {
+      //         console.log(this.greeting+ ' Heloooooo ' + student); //this will fetch outside greetings in arrow function
+      //       });
+      //     },
+      //   };
+      //   obj1.says();
+
+      let obj1 = {
+        greeting: 'Good morning',
+        names: ['Ridhi', 'Abhay', 'Chahat', 'Isha'],
+        says() {
+          this.names.forEach(function s(student) {
+            console.log(this.greeting + ' Heloooooo ' + student); //this will fetch inside greetings in function and hence return undefined.
+          });
+        },
+      };
+      obj1.says();
+
+    //   in objects arrow functions will take outside this and func will take inside this
+    </script>
+  </body>
+</html>

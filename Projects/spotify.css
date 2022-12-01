@@ -1,0 +1,198 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    top: 0;
+    position: relative;
+    align-items: center;
+}
+
+/* Navigation: Logo */
+#logo .fab {
+    margin: 0px 68px;
+    padding: 20px 10px;
+    color: white;
+    font-size: 1.8rem;
+}
+/* Navigation: List styling*/
+#navbar ul{
+    display: flex;
+    position: absolute;
+    right: 62px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#navbar ul li a:hover{
+    content: "";
+    color: rgb(81 210 81);
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    margin: 7px 16px;
+    padding: 12px 10px;
+    display: block;
+    text-decoration: none;
+}
+/*Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    color: rgb(81 210 81);
+}
+#home .primary{
+    font-size: 8rem;
+    padding: 2px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 14%;
+    margin-right: 14%;
+    /* margin-right: 49% */
+}
+#home .secondary{
+    font-size: 8rem;
+    padding: 2px;
+    margin-right: 32%;
+    margin-left: 32%;
+    margin-top: -28px;
+}
+#home p{
+    text-align: center;
+    padding:10px;
+    font-size: 1.4rem;
+    margin: 12px;
+    font-weight: 400;
+}
+#home .btn{
+    outline: none;
+    position: relative;
+    left: 43%;
+    margin-top: 1%;
+    margin-bottom: 9%;
+    text-align: center;
+    width: 15%;
+    height: 41px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    background-color:  rgb(81 210 81);
+    border: 2px solid rgb(81 210 81);
+    color: rgb(42, 55, 170);
+    font-weight: 600;
+    transition: all 0.1s ease-out ;
+}
+#home .btn:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+#home::before{
+    content: "";
+    background-color:rgb(42, 55, 170);
+    position: absolute;
+    width: 100%;
+    height: 137%;
+    z-index: -1;
+}
+/* Section 2 */
+#sec2{
+    position: relative;
+}
+#sec2::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    width: 100%;
+    height: 101%;
+    z-index: -1;
+}
+#sec2 .list{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+#sec2 .list ul{
+    list-style: none;
+}
+#sec2 .list ul li{
+    color: white;
+    padding: 10px 40px;
+    margin: 10px 10px;
+}
+#sec2 .list ul h5{
+    color: rgb(134, 133, 134);
+    position: relative;
+    left: 49px;
+    /* right: 3px; */
+}
+#logo2 .fab {
+    position: relative;
+    top: 55px;
+    right: -42px;
+    margin: 5px 68px;
+    padding: 21px 10px;
+    color: white;
+    font-size: 1.9rem;
+}
+#sec2 #app .fab{
+    font-size: 18px;
+    position: relative;
+    left: 82%;
+    background-color:#191716;
+    color: white;
+    padding: 8px;
+    margin-right: 5px;
+}
+#sec2 #app .fab:hover , #footer #fl li:hover,#sec2 .list ul li:hover{
+    color:rgb(81 210 81) ;
+}
+/* footer */
+#footer{
+    /* display: block; */
+    display: flex;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+#footer #fl{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+#footer #fl li{
+    position: relative;
+    padding: 41px 10px;
+   left: 11%;
+    color: gray;
+}
+#footer #LL .fas{
+    position: absolute;
+    left: 90%;
+    top: 187%;
+    color: rgb(134, 133, 134);
+    padding: 8px;
+    font-size: 0.7rem;
+    margin-right: 5px;
+}
+#footer #LL .far{
+    position:absolute;
+    left: 86%;
+    top: 191%;
+    color: rgb(134, 133, 134);
+    padding: 8px;
+    font-size: 0.7rem;
+    margin-right: 5px;
+}
