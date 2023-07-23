@@ -18,9 +18,9 @@
 
             /*default value of flex-direction is row */
             flex-direction: row;
-            /* flex-direction: column;
-             flex-direction: row-reverse;
-             flex-direction: column-reverse; */
+            /* flex-direction: column; */
+             /* flex-direction: row-reverse; */
+             /* flex-direction: column-reverse; */
 
             /* default value is nowrap */
             /* flex-wrap: nowrap; */
@@ -41,6 +41,7 @@
             /* align-items: flex-end; */
             /* align-items: flex-start; */
             /* align-items: stretch; (stretch is the default value) */
+             /* align-items: baseline;  if different boxes have different margins then it  adjust them at the same base line with same margin*/ 
         }
 
         .item {
@@ -50,11 +51,13 @@
             width: 100px;
             margin: 4px;
             height: 100px;
+           
         }
 
         #item-1 {
             /* Flex properties of a flex item */
             /* higher the order ,later it shows up in the container */
+            /* we can also set negative values to order */
             order: 2;
             /* flex-grow: 3; */
         }
