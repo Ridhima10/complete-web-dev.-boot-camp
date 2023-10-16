@@ -8,17 +8,46 @@
         <title>Variables and datatypes in javascript</title>
         <script>
             // variables are the containers that store some values
-            var a = 6; //int
-            var b = "heloooo"; //string
-            c = 5.6; //it is not necessary to write it with "var"
-            console.log(a);
-            console.log(b);
-            console.log(c);
+            var x = 6; //int
+            var y = "heloooo"; //string
+            z = 5.6; //it is not necessary to write it with "var"
+            console.log(x);
+            console.log(y);
+            console.log(z);
             //javascript has in-built feature of recognizing data-types. So, there is no need to specify it.
-
-
-
+            
+            
+            
             // in js console, if we mention var before initializing a variable then it will give undefined as ans but if we directly mention a=10 then it will give 10 as output and this goes for any datatype.
+            
+            
+            // primitive and non primitive datatypes
+            // primitive- built in datatypes (n,n,s,s,b,b,u) i.e- null,number,symbol,string,bigint,boolean,undefined
+
+            let a=null;
+            let b=344;
+            let c=Symbol("Hi i am a symbol");
+            let d="Hello";
+            let e=true;
+            let f=BigInt("567")+BigInt("3");
+            let g=undefined;
+
+            console.log(a,b,c,d,e,f,g)
+
+            // to find type of a variable
+            console.log(typeof d)
+            console.log(typeof (g))
+
+            // Non-primitive- Objects (Key-value pairs)
+            const item={
+                "ridhi":true,
+                "Shubh":false,
+                "Lovish": 35,
+                "Rohan":undefined
+            }
+            console.log(item)
+            console.log(item["ridhi"])
+            console.log(item["abc"])
         </script>
     </head>
 
