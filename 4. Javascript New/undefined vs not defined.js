@@ -2,8 +2,8 @@
 
 
 
-// var a = 7;
-// console.log(x); //not defined bcz x is not present
+var a = 7;
+console.log(x); //not defined bcz x is not present
 
 
 // console.log(a); //undefined bcz of hoisting
