@@ -96,7 +96,18 @@ Things Learned:
 1.  Function bundled with its lexical environment is known as a closure. 
 2.  Whenever function is returned, even if its vanished in execution context but still it remembers the reference it was pointing to. Its   not just that function alone it returns but the entire closure and that's where it becomes interesting.
 
+A closure in JavaScript is when a function remembers the variables from its outer scope, even after that outer function has finished executing. It's like the function carries with it a little "snapshot" of the environment in which it was created.
 
+
+example:
+Imagine you have a box with some toys, and you give it a name like "box1." Now, you have a magical ability: you can create a smaller box, put it inside "box1," and give it a name like "box2." This smaller box can see and use the toys in "box1," even if you close "box1."
+
+In JavaScript terms:
+
+The big box is like a function.
+The toys inside the big box are like variables defined in that function.
+The smaller box is like a function inside the big function (a closure).
+The closure can still use the variables from the big function even after the big function has finished running.
 */
 
 
