@@ -32,7 +32,7 @@ function x() {
 var z = x();
 console.log(z)
 
-// when we will call function z it will print value of a i.e 10 because inspite of losing the function a() it still remembers its varibles because of closure.
+// when we will call function z it will print value of a i.e 100 because inspite of losing the function x() it still remembers its varibles because of closure.
 z();
 
 
