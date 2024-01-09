@@ -1,7 +1,5 @@
 /*setTimeout is a JavaScript function that allows you to schedule the execution of a function after a specified amount of time has passed. It is commonly used for introducing delays in code execution or for executing a function asynchronously after a certain period. The syntax is as follows:
 
-javascript
-Copy code
 setTimeout(function, delay);
 function: The function to be executed after the specified delay.
 delay: The time (in milliseconds) to wait before executing the function.
@@ -85,14 +83,15 @@ for that we have to wrap setTimeout function in a new function so that is has to
  */
 
 
+
 function z() {
-    for (let k = 1; k <= 5; k++) {
-        function wrap(l) {
-           setTimeout(function () {
-             console.log(l);
-           }, l * 1000);
-      }
-   wrap(k)
+  for (var k = 1; k <= 5; k++) {
+    function wrap(l) {
+      setTimeout(function () {
+        console.log(l);
+      }, l * 1000);
+    }
+    wrap(k);
   }
   console.log('Values of l printing after 1 second each is :');
 }
