@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fonts</title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet"> -->
+    <!-- we can also import 2 or more fonts into a single import statement , just select all the fonts at the same time and them copy import, it will automatically merge all the fonts together-->
+
     <style>
-        p {
-            font-family: 'Baloo Tammudu 2', cursive;
-            font-size: 20px;
-            line-height: 2em;
+      @import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Bungee+Spice&family=Poppins:wght@300&display=swap");
+      /* it has baloo bhai+popins+bungee spice */
+      h1 {
+        font-family:"Bungee Spice","Poppins", "Baloo 2", sans-serif;
+      }
+      p {
+          font-family: "Baloo 2";
+          font-size: 20px;
+          line-height: 2em;
         }
-
-        span{
-            font-weight: bold;
-            font-style: italic;
-            color: hotpink;
-        }
+        
+        span {
+          font-family: "Bungee Spice", cursive;
+        font-weight: bold;
+        font-style: italic;
+        color: hotpink;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Fonts in html</h1>
-    <p> The narrator <span>had</span>  been wanting to buy a roll-top desk for a very long time.</p>
+    <p>
+      The narrator <span>had</span> been wanting to buy a roll-top desk for a
+      very long time.
+    </p>
     <p>finding it expensive, he was unable to do so.</p>
     <p>finally,the narrator finds one in a junk shop in Bridport</p>
-</body>
-
+  </body>
 </html>
