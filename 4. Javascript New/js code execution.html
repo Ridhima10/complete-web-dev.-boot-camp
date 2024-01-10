@@ -24,6 +24,13 @@
         <div style="font-size: large;">
             <p>Single threaded means it can execute one command at a time and synchronous single threaded means one at a time in a specific order</p>
         </div>
+        <div style="font-size: large;">
+            <h2>Execution is done in 2 phases:</h2>
+            <p>Phase1- <b>Memory creation-</b> allocated memory to var and functions. In case of var it stored keyword undefined and in functions it stores the whole function code</p>
+            <p>Phase 2- <b>Code Execution Phase</b> all the calculations happens in this phase</p>
+            <p>As soon we are done with function execution, the whole execution context is deleted.</p>
+            <p>It manages everything in the <b>Call Stack</b> It has GEC and when we invoke a func , it store that func EC and when we are done with the func then the EC of that func is removed from the stack. This is the way how things are done.</p>
+        </div>
         <script src="js code execution.js"></script>
     </body>
 
