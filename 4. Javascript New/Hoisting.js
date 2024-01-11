@@ -1,11 +1,11 @@
 // Before Hoisting
-var x = 7;
-function getName() {
-    console.log("Hello world");
-}
-getName();
-console.log(x)
-console.log(getName)
+// var x = 7;
+// function getName() {
+//     console.log("Hello world");
+// }
+// getName();
+// console.log(x)
+// console.log(getName)
 
 
 // Note: In case of variable it gives it value of undefined in execution context phase 1, but in case of function it gives the whole function.
@@ -13,7 +13,7 @@ console.log(getName)
 // After Hoisting
 // getName(); //it will print the value of func
 // console.log(getName) //it will print the whole function
-// console.log(x)
+// console.log(x) //undefined
 // var x= 7;
 // function getName() {
 //     console.log("Hello world");
