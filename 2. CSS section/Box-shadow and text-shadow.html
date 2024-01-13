@@ -13,18 +13,28 @@
             width: 30%;  
             padding: 5px;
             margin: 46px;
-            background-color: rgb(207, 233, 94);
+            background-color: rgb(109, 148, 206);
         }
         #box-1{
-            box-shadow: -5px -5px rgb(199 171 33);
+            /* box shadow: h-offset v-offset blur spread color inset */
+            box-shadow: -5px -5px rgb(46, 123, 210);
             /* box-shadow: -5px -5px rgb(199 171 33); */
             /* box-shadow: -5px -5px rgb(68, 61, 61); */
         }
         #box-2{
-            box-shadow:inset 8px 5px 5px 3px rgba(133, 91, 233, 0.856);
+            box-shadow:inset 8px 5px 5px 3px rgba(59, 99, 199, 0.856);
         }
         h1{
-            text-shadow: 3px 2px 2px #c24036;
+            text-shadow: 3px 2px 2px #e5dfde;
+        }
+        .another-box{
+            /* outline:width style color */
+            outline: 4px solid grey;
+            border: 14px solid rgb(85, 78, 186); /*it will be inside outline */
+            /* we can give space between border and ouline using offset */
+         outline-offset: 20px;
+         border-radius: 50px;
+         /* we cannot give border radius to outline alone. it will follow border only */
         }
     </style>
 </head>
@@ -37,6 +47,9 @@
         <div class="box" id="box-2">
             <h1>Card 2</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo iste harum vitae eius. Illo necessitatibus quibusdam possimus praesentium cupiditate nisi molestias optio suscipit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere iste culpa vitae ipsa nulla eos alias cum, possimus, inventore pariatur at accusamus velit.</p>
+        </div>
+        <div class="another-box box">
+            <p>Another box which has outline property</p>
         </div>
     </div>
 </body>
