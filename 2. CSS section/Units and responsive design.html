@@ -30,6 +30,19 @@
         #second {
             font-size: 3rem;
             padding: 3rem;
+            /* height: 100vmin; equa) */
+            background-color: bisque;
+        }
+        /* vmin - computer(height) phone(width) */
+        .cont2{
+            border: 2px solid red;
+            min-height: 50rem;/*it will take  minimum height atleast 50 rem irrespective of the content height. if we have content hn height then height will also increaseas content increases*/
+            font-size: 3rem;
+        }
+        .cont3 div{
+            width: 50%; /*% also work according to parent. here div will be 50% of cont3 (inherit properties of prent*/
+            border: 2px solid red;
+            font-size: 3rem;
         }
     </style>
 </head>
@@ -40,6 +53,16 @@
         <h1 id="second">This is the second heading</h1>
         <h1 id="third">This is the third heading</h1>
         <h1 id="fourth">This is the fourth heading</h1>
+    </div>
+    <div class="cont2">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, sint porro aliquid dolor ipsum facilis dolorem aperiam voluptatum adipisci placeat quo, consequuntur voluptates ut exercitationem, alias molestiae qui quisquam harum atque suscipit. Autem, similique.</p>
+    </div>
+    <div class="cont3">
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, sint porro aliquid dolor ipsum facilis dolorem aperiam voluptatum adipisci
+            <div>
+                placeat quo, consequuntur voluptates ut exercitationem, alias molestiae qui quisquam harum atque suscipit. Autem, similique.
+            </div>
+           </div>
     </div>
 </body>
 
