@@ -54,7 +54,7 @@ b(1,2); //here 1 and 2 are the arguments
 
 
 // First Class Functions
-//Answer- The ability to use functions as values is called as first class functions. They are also called as fisrt class citizens
+//Answer- The ability to use functions as values is called as first class functions. They are also called as first class citizens
 // we can pass function inside another function as an arguement
 var b=function(param1) { 
     console.log(param1)
