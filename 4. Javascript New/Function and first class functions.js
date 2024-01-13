@@ -88,3 +88,5 @@ var b=function(param1) {
 
 
 //  if we use let and const here it will behave the same way they behave during let and const as variables. here function is behaving like a value
+
+

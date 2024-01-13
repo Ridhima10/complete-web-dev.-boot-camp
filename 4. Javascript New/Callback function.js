@@ -67,3 +67,12 @@ attachEventListeners()
 // why do we need to remove eventlisteners
 // they are heavy which means they consume memory.whenever we make eventListeners it forms a closure..and even when callstack is empty but still the program does not free its memory . That is the reason we remove them when we dont need them. when we remove, then all the variable are collected by garbage collector
 
+
+
+/*
+Things learned:
+1. Function that is passed on as argument to another function is called callback function.
+2. setTimeout helps turn JS which is sinhlethreaded and synchronous into asynchronous.
+3. Event listeners can also invoke closures with scope.
+4. Event listeners consume a lot of memory which can potentially slow down the website therefore it is good practice to remove if it is not used.
+*/
