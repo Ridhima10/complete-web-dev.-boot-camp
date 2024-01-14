@@ -82,3 +82,26 @@ CB Timeout
 
 // first all the func from microtask queue executes(means it should be empty first) then only callback queue gets the chance to execute
 // the situation is called as Starvation of the callback queue when it never gets the cahnce to execute 
+
+
+
+//More questions
+/*
+1. When does the event loop actually start? - Event loop, as the name suggests, is a single-thread, loop that is `almost infinite`. It's always running and doing its job. ❤️
+2.  Are only asynchronous web API callbacks are registered in the web API environment? - YES, the synchronous callback functions like what we pass inside map, filter, and reduce aren't registered in the Web API environment. It's just those async callback functions that go through all this.
+3. Does the web API environment stores only the callback function and pushes the same callback to queue/microtask queue? - Yes, the callback functions are stored, and a reference is scheduled in the queues. Moreover, in the case of event listeners(for example click handlers), the original callbacks stay in the web API environment forever, that's why it's advised to explicitly remove the listeners when not in use so that the garbage collector does its job.
+4. How does it matter if we delay for setTimeout would be 0ms. Then callback will move to queue without any wait? 
+No, there are trust issues with setTimeout() . The callback function needs to wait until the Call Stack is empty. So the 0 ms callback might have to wait for 100ms also if the stack is busy.
+
+
+*/
+
+/*
+Things learned:
+1. Browser has superpowers that are lent to JS engine to execute some tasks, these superpowers include web API's such as console, location, DOM API, setTimeout, fetch, local storage.
+2. Async Callback functions and event handlers are first stored in Web API environment and then transferred to callback queue.
+3. Promises and mutation observer are stored in API environment and then transferred to microtask queue.
+4. Event loop continuously observes call stack and when it is empty it transfers task to call stack.
+5. Micro task is given priority over callback tasks.
+6. Too many micro tasks generated can cause Starvation (not giving time to callback tasks to execute).
+*/
