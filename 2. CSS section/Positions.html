@@ -1,64 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        /* types of positions: static (default), relative, absolute, fixed and sticky */
-        .container {
-            border: 2px solid black;
-            background-color: rgb(173, 38, 60);
-            height: 1000px;
-        }
+     
+      /* types of positions: static (default), relative, absolute, fixed and sticky */
+      .container {
+        height: 70vh;
+        width: 70vw;
+        border: 2px solid blueviolet;
+        margin-top: 10rem;
+        position: absolute;
+       
+        /* in position absolute the parent can be of any position to make it work according to parent  */
+        /* top: 2rem; */
+        /* left: 2rem; */
 
-        .box {
-            border: 2px solid rgb(15, 190, 83);
-            height: 82px;
-            width: 73px;
-            margin: 4px;
-            border-radius: 12px;
-            display: inline-block;
-            /*for keeping it in one line*/
-        }
-
-        #box2 {
-            /* relative: Positions the element relative to its normal position and will leave a gap at its normal position */
-            position: relative;
-            top: 13px;
-            left: 24px;
-            background-color: cornflowerblue;
-        }
-
-        #box3 {
-            /* absolute: Positions the element relative to the position to its first parent */
-            /* position: absolute;
-           top: 22px;
-           left: 12px; */
-            /* sticky: Sticks will be fixed only till the end of the container and we can only move it from the top side*/
-           position: sticky;
-           top: 12px;
-        }
-        #box4{
-            /* fixed: fixed will be fixed until the end of the web page.*/
-            position: fixed;
-            right: 33px;
-        }
-        #box5{
-            position: absolute;
-            top: 2px;
-        }
+        /* Exception: transform,filter or perspective prop can also make an element appeared as positioned.  */
+        /* filter: invert(0); */
+        /* perspective: 0em; */
+        /* transform: translate(0); */
+      }
+      .box {
+        width: 23rem;
+        height: 4rem;
+        margin: 5px;
+      }
+      #box1 {
+        background-color: rgb(98, 118, 231);
+        /* position: relative; relative: Positions the element relative to its normal position and will leave a gap at its normal position */
+        top: 15px;
+        left: 20px;
+        
+      }
+      #box2 {
+        background-color: brown;
+        position: absolute;
+        /* absolute: Positions the element relative to the positioned ancestor..if there is no postioned parent or ancestor then it will be according to the root element */
+        top: 30px;
+        left: 40px;
+      }
+      #box3 {
+        background-color: rgb(42, 165, 110);
+        /* position: sticky; */
+        /* sticky: it will be static first and when we scroll it sticks on the page till its parent's height*/
+        top: 0rem;
+      }
+      #box4 {
+        background-color: rgb(239, 85, 180);
+        /* position: fixed; */
+        /* fixed: fixed will be fixed until the end of the web page. */
+        top: 0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="box" id="box1">1</div>
-        <div class="box" id="box2">2</div>
-        <div class="box" id="box3">3</div>
-        <div class="box" id="box4">4</div>
-        <div class="box" id="box5">5</div>
-
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">3</div>
+      <div class="box" id="box4">4</div>
     </div>
-</body>
-
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, cupiditate
+      vel asperiores, eos eaque quae harum dolorum laboriosam atque placeat
+      quasi. Esse id voluptatem aliquid officiis possimus aliquam ipsam
+      deleniti, commodi natus quauptatum voluptate esse, culpa rem repellendus
+      nemo assumenda optio est iste autem modi, accusantium repellat.
+      Perspiciatis, vel maiores eveniet similique vitae tempora suscipit
+      numquam. Sint voluptate nobis eius, accusantium impedit adipisci similique
+      ad ipsa earum harum quis quidem hic velit quia libero minus esse numquam
+      suscipit incidunt ullam exercitationem facilis! Esse culpa libero possimus
+      dolores, optio accusamus rerum vel officiis in. Asperiores beatae sint
+      voluptatem sequi officiis illum fugit blanditiis temporibus ullam quos
+      omnis dolore autem corrupti ab id delectus inventore ipsum, aliquam
+      debitis dignissimos maxime veniam, aut vitae qui? Explicabo nemo soluta
+      cupiditate laboriosam natus quas, optio laborum nisi, commodi, veniam
+      tenetur ut repellat? Esse molestiae in animi error natus neque quas. Neque
+      veritatis, nam id voluptas rerum vel nisi dolorem aliquid architecto alias
+      expedita dolorum eius ducimus recusandae ea ut, vero illo quos! Asperiores
+      odio, hic, ipsum, soluta laborum modi tenetur accusamus quidem dolorem
+      mollitia explicabo esse nesciunt. Error temporibus, nobis placeat quia
+      necessitatibus facilis laudantium quam delectus rerum consequatur sunt
+      neque odit deleniti sint, omnis, quaerat porro praesentium officiis eius
+      aliquam. Aut sapiente totam possimus quia ex sed voluptatum quod. Amet
+      doloremque nam sequi ipsam quam repudiandae. Autem, recusandae, cum
+      repudiandae magni doloremque assumenda nobis deleniti, perspiciatis rem
+      corrupti quas eos vel accusantium in asperiores reiciendis perferendis
+      alias modi hic? Culpa nostrum quod possimus neque molestias.
+    </p>
+  </body>
 </html>
