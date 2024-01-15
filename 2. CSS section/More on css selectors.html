@@ -29,26 +29,34 @@
         div+p{
             border:2px solid rgb(121, 223, 90);
         }
+        /* where p is the first child */
+        .line:first-child{
+            color: rgb(31, 165, 16);
+        }
+        ::selection{  /*it will select the element with these properties*/
+            color: aqua;
+            background-color: black;
+        }
     </style>
 </head>
 
 <body>
     <div>
         <div>
-            <p>helloooo there :)</p>
+            <p class="line">helloooo there Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate pariatur eveniet possimus maxime? Alias dolores dolore quisquam possimus quis in.:)</p>
             <ul>
                 <li>First list</li>
                 <li>
-                    <p> second list</p>
+                    <p class="line"> second list</p>
                 </li>
                 <li>third list</li>
-                <p>another para</p>
+                <p class="line">another para</p>
             </ul>
-            <p>One more here :/</p>
+            <p class="line">One more here :/</p>
         </div>
-        <p>Last para for sure !!!</p>
+        <p class="line">Last para for sure !!!</p>
     </div>
-    <p>hi</p>
+    <p class="line">hi</p>
 </body>
 
 </html>
