@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS engine and V8 architecture</title>
+</head>
+<body>
+    <p>Things learned:
+        <ul>
+            <li>
+                 JS runtime environment contains all elements required to run JS.
+
+            </li>
+            <li>
+It contains JS engine, set of API's, callback queue, microtask queue, event loop.
+            </li>
+            <li>
+                 JS engine is a piece of code.
+            </li>
+            
+            <li>
+                Process includes Parsing -> Compilation -> Execution.
+            </li>
+            <li>
+         Parsing breaks code into tokens and converts it into AST(Abstract Syntax Tree).
+            </li>
+            <li>Modern JS engine follows JIT compilation, it interprets while it optimises code as much as it can.</li>
+            <li>Execution and Compilation are done together.</li>
+            <li>Execution has Garbage collector and other optimisation such as inlining, copy elusion, inline caching etc.</li>
+        </ul>
+       </p>
+</body>
+</html>
