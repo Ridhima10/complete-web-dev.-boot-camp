@@ -7,74 +7,98 @@
     <title>Flexbox</title>
     <style>
         .container {
-            height: 500px;
-            border: 2px solid black;
-            width: 100%;
-            /* initialize the container as flex box */
-            display: flex;
-
             /* Flex properties for flex container */
-
+            border: 2px solid blue;
+            height: 80vh;
+            display: flex;
 
             /*default value of flex-direction is row */
             flex-direction: row;
             /* flex-direction: column; */
-             /* flex-direction: row-reverse; */
-             /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
 
-            /* default value is nowrap */
-            /* flex-wrap: nowrap; */
-            flex-wrap: wrap;
-            /* flex-wrap: wrap-reverse; */
 
-            /* Short-hand (flex-direct+flex-wrap) */
-            /* flex-flow: row wrap-reverse; */
+            /* to center divs */
+            justify-content: center;
+            /* align-items: center; */
 
-            /* justify-content will justify the content in horizontal direction */
+
+            /* justify-content will justify the content in main axis (if flex direction is row then it is row)*/
             /* justify-content: center; */
             /* justify-content: space-between; */
             /* justify-content: space-evenly; */
             /* justify-content: space-around; */
 
-            /* align-items will justify the content in vertical direction */
+
+
+            /* align-items will justify the content in cross axis(if flex direction is row then it is in vertical direction)  */
             /* align-items: center; */
             /* align-items: flex-end; */
             /* align-items: flex-start; */
             /* align-items: stretch; (stretch is the default value) */
-             /* align-items: baseline;  if different boxes have different margins then it  adjust them at the same base line with same margin*/ 
+            /* align-items: baseline;  if different boxes have different margins then it  adjust them at the same base line with same margin*/
+
+
+
+            /* align content(used for more than 1 line)  also there is no justify-items in flexbox*/
+            /* align-content: center; */
+            /* align-content: end; */
+            /* align-content: space-around; */
+            /* align-content: start; */
+            /* align-content: space-between; */
+
+
+
+
+
+
+            /* default value is nowrap */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+
+            /* Short-hand (flex-direct+flex-wrap) */
+            /* flex-flow: row wrap; */
+
+            /* it will give gap between items */
+            /* gap: 4px;  */
+            /* row-gap: 5px; */
+            /* column-gap: 5px; */
+            /* gap: 40px 10px;  shorthand= gap:row col*/
         }
 
         .item {
-            border: 2px solid rgb(194, 61, 61);
-            background-color: pink;
-            padding: 2px;
-            width: 100px;
-            margin: 4px;
-            height: 100px;
-           
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            margin: 2px;
         }
 
         #item-1 {
             /* Flex properties of a flex item */
-            /* higher the order ,later it shows up in the container */
+            /* higher the order ,later it shows up in the container, default order is 0 */
             /* we can also set negative values to order */
             order: 2;
             /* flex-grow: 3; */
         }
 
         #item-2 {
-            /* order: 6; */
+            order: 6;
             /* flex-grow: 2; */
-            flex-basis: 200px;
+            /* flex-basis: 200px; */
             /* when flex direction is set to row then flex basis will control width */
             /* when flex basis direction is set to column then flex basis will control height */
         }
 
         #item-3 {
-            /* flex-grow: 3;
-            flex-shrink: 3; */
+            /* flex-grow: 4; */
+            flex-shrink: 3;
             /* short-hand (flex=flex grow + flex shrink + flex basis) */
             /* flex: 2 2 220px; */
+
+            /* align self will apply on one box only */
             /* align-self: flex-start; */
             /* align-self: flex-end; */
             align-self: center;
@@ -91,7 +115,13 @@
         <div class="item" id="item-3">Third</div>
         <div class="item" id="item-4">Fourth</div>
         <div class="item" id="item-5">Fifth</div>
-        <div class="item" id="item-6">Sixth</div>
+        <div class="item" id="item-7">Sixth</div>
+        <div class="item" id="item-8">Seventh</div>
+        <div class="item" id="item-9">Eighth</div>
+        <div class="item" id="item-10">Ninth</div>
+        <!-- <div class="item" id="item-11">Tenth</div>
+        <div class="item" id="item-12">Eleventh</div>
+        <div class="item" id="item-12">Twelveth</div> -->
     </div>
     </div>
 </body>
