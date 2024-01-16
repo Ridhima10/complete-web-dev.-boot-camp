@@ -20,16 +20,42 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: all 2s ease-in-out;
+            /* transition: all 2s ease-in-out; */
         }
-        .box:hover{
+         .box:hover{
             /* transform: rotate(360deg); */  /*it will rotate the box*/
-            /* transform: scale(2);*/ /*it will zoom-in the box 2x */
-            /* transform: translateX(80px); */ /*box will move horizontally*/
-            transform: translateY(-80px); /*box will move vertically*/
-            /* transform: translate(40px,70px); */ /*Move acc to the values*/
+            /* transform:rotate(0.25turn) */
+            /* transform: rotateX(180deg); */
+            /* transform: rotateY(40deg); */
+
+
+
+            /* it will zoom-in the box 2x  */
+            /* transform: scale(2); */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+
+
+            
+            /*Move acc to the values*/
+            /* transform: translate(40px,70px); */
+            /*box will move horizontally*/
+            /* transform: translateX(80px); */
+            /* transform: translateX(50%); */
+            /* box will move vertically */
+            /* transform: translateY(-80px); */
+
+
             /* transform: skew(20deg); */
-        }
+
+
+            /* to apply multiple properties at the same time */
+            transform: translateX(100%) skew(20deg) translateY(-40%);
+
+
+          /* translate: it can take x,y,z; */
+         
+        } 
     </style>
 </head>
 <body>
