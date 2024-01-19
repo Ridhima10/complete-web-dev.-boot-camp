@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fir and object cover</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 500px;
+            border: 2px solid rebeccapurple;
+            background-color: rgb(187, 220, 234);
+        }
+        img{
+            height: 500px;
+            width: 500px;
+            /* it contains the whole picture */
+            object-fit: contain; 
+            object-position: 20px 10px;
+            /* it cuts the picture acc to dimensions */
+            /* object-fit: cover; */
+            /* object-position: 20px 10px; */
+            /* we can also crop it according to our need */
+            /* object-position: top right;  */
+            /* it fills the whole picture no mater it breaks or not and it is by default*/
+            /* object-fit: fill;  */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/cakes and flowers/cake1.jpg" alt="">
+    </div>
+</body>
+</html>
