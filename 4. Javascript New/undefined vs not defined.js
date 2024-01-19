@@ -38,5 +38,5 @@ console.log(a)
 // also known as weakly typed language
 
 
-a=undefined //it is not a good practice to assign undefined to a var becuase it has a special meaning moreover it will automatically assign undefined to a variable during the first phase so there is no need to assign.
+//a=undefined //it is not a good practice to assign undefined to a var becuase it has a special meaning moreover it will automatically assign undefined to a variable during the first phase so there is no need to assign.
 
