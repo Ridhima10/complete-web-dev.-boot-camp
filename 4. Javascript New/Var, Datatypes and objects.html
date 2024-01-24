@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // variables are the containers that store some values
+      var x = 6; //int
+      var y = "heloooo"; //string
+      z = 5.6; //it is not necessary to write it with "var"
+      console.log(x);
+      console.log(y);
+      console.log(z);
+      //javascript has in-built feature of recognizing data-types. So, there is no need to specify it.
+
+      // in js console, if we mention var before initializing a variable then it will give undefined as ans but if we directly mention a=10 then it will give 10 as output and this goes for any datatype.
+
+      // primitive and non primitive datatypes
+      // primitive- built in datatypes (n,n,s,s,b,b,u) i.e- null,number,symbol,string,bigint,boolean,undefined
+
+      let a = null;
+      let b = 344;
+      let c = Symbol("Hi i am a symbol");
+      let d = "Hello";
+      let e = true;
+      let f = BigInt("567") + BigInt("3");
+      let g = undefined;
+
+      console.log(a, b, c, d, e, f, g);
+
+      // to find type of a variable
+      console.log("Type of Null is : " + typeof a);
+      console.log(typeof d);
+      //typeof null is object
+      console.log(typeof g);
+
+      // Non-primitive- Objects (Key-value pairs)
+      const item = {
+        ridhi: true,
+        Shubh: false,
+        Lovish: 35,
+        Rohan: undefined, //it is not a good practice to give value as undefined because it is a keyword and has a special meaning
+        Khushi: null,
+        "Ridhima Jain": 9.2,
+      };
+      console.log(item);
+      item.Abhay = "hello"; //to add something in oject
+
+      item.Abhay = "Bye"; //to edit a value
+
+      console.log(item["ridhi"]);
+      console.log(item["abc"]); //undefined
+      console.log(typeof Khushi);
+      console.log(typeof item.Khushi); //object
+      console.log(typeof abc); //undefined
+
+      // Types of number(infinity,NaN)
+      var i = 1 / 0;
+      console.log(i);
+      console.log(Infinity + 1); //Any operation with infinity is infinity
+
+      //To calculate Power
+      console.log(Math.pow(2, 10));
+      console.log(Math.pow(10, 1000));
+
+      // To find max value a number can store
+      console.log(Number.MAX_VALUE);
+
+      // To find square root of a number
+      console.log(Math.sqrt(9));
+      console.log(Math.sqrt(-1)); //Nan because -1 is not a number
+
+      // To convert a string into number
+      console.log(parseInt("100"));
+      console.log(parseInt("aaaa")); //NaN because aaaa cannot be converted into a number
+    </script>
+  </body>
+</html>
