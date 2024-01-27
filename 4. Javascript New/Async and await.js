@@ -51,13 +51,13 @@
 const p = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("Promise resolved!!!");
-  }, 5000);
+  }, 10000);
 });
 
 const p2 = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("Promise resolved!!!");
-  }, 10000);
+  }, 20000);
 });
 
 //   function getData(){
@@ -76,18 +76,51 @@ async function handlePromise() {
   console.log("Async func");
   console.log(val);
 
-//   if we call promise 2 times then it will wait for total 5s and call it only once 
-// firstly it will print "hey there" then wait for 5s and then print everything
+  //   if we call promise 2 times then it will wait for total 5s and call it only once
+  // firstly it will print "hey there" then wait for 5s and then print everything
   const val2 = await p2;
   console.log("Async func 2");
   console.log(val2);
 }
 handlePromise();
 
-
 // what if we have 2 promises now and first has more time than second? will it print the second one with less time? or wait for 10s to get over and print everything?
 // answer- since it prints according line by line so it will firs print "hey there" then it will wait for 10s . till then second promise time also got over so it will print everything after 10s
 
-
 // Now what if first promises time is 5s and secons promise timing is 10sec?
 // In this case firslty "hey there " will be printed then p1 will print after 5s then after some time p2 will print.
+
+// Real world example of async await using fetch()
+// fetch returns a response
+
+// let us fetch the content of an api
+
+// "user_url": "https://api.github.com/users/{user}",
+const API_url = "https://api.github.com/users/Ridhima10";
+async function handlePromise2() {
+  // try {
+    const data = await fetch(API_url);
+    const jsonValue = await data.json();
+     console.log(jsonValue)
+     //  or
+     //  fetch().then(res=>res.json()).then(res=>console.log(jsonValue))
+  // } catch (err) {
+// if the api is invalid then this will execute
+    // console.log(err);
+  // }
+}
+handlePromise2().catch(err=>console.log(err));
+
+// Error handling-whenever you have async, await in your code wrap it inside try catch block
+
+//we can also use the old method that is .catch
+
+
+// Interview questions
+
+//what is Async await?
+// Async is a keyword that is used ny functions and async function are different thing.
+//  await can only be used inside async function to handle promises and these promises are async
+
+
+// 'async await' and 'then' both are same its just the way of writting is different
