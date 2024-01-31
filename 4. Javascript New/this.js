@@ -43,3 +43,33 @@ const obj={
 }
 obj.x()
 // x()
+
+
+// this inside arrow function
+// arrow func dont have this binding associate with it. 
+// It retains the this value of the enclosing lexical context
+
+const obj1={
+    a:10,
+    x:()=>{
+        console.log(this);
+    },
+}
+obj1.x()
+// the lexical env is global obj so the value of window obj will be printed
+
+
+const obj2={
+    a:10,
+    x:function(){
+        const y=()=>{
+            console.log(this);
+        };
+        y()
+    },
+}
+obj2.x()
+// here this will be lexically enclosed within obj2
+
+
+// this inside DOM elements- reference to its HTML element
