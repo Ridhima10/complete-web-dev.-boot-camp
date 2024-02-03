@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM(Document Object Model)</title>
+</head>
+<body>
+    <div class="cont">
+        <div class="box">
+            <h2>This is a box</h2>
+        </div>
+
+
+    </div>
+    <script>
+        // Updates the title of the page
+        document.title="DOM and BOM"
+
+
+        console.log(document.title)
+        console.log(document.body)
+
+        // it injects inline css
+        document.body.style.backgroundColor="pink"
+
+
+        // DOM AND BOM
+        // DOM- mapping of document in an object
+        // BOM(Browser object model)-working with everything except document
+
+        console.log(window)
+        console.log(window.document) 
+        // or
+        console.log(document)
+
+
+        console.log(window.document.body)
+        // or
+        console.log(document.body)
+
+
+        //   inspect the element and then apply style
+        // $0.style.backgroundColor="red"
+
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>
