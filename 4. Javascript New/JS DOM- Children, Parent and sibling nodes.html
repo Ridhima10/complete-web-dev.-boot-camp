@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM- Children, Parent and sibling nodes</title>
+
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 5px;
+            margin: 5px;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"> Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+    </div>
+
+
+
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Ridhi</td>
+          <td>22</td>
+        </tr>
+      </table>
+
+
+    <script>
+        console.log("Hello World")
+        console.log(document.body) //to access the content of body
+
+
+        // ChildNodes
+        console.log(document.body.childNodes) //to access the childNodes of body. It will also contain text (blank space) and comments
+        console.log(document.body.childNodes[0]) //node at index 0
+        console.log(document.body.childNodes[1]) //node at index 1
+        console.log(document.body.childNodes[10]) //node at index 10 (which is not present will log undefined)
+
+
+    //   Childnodes inside Childnodes
+        console.log(document.childNodes)
+        console.log(document.body.childNodes[1].childNodes)
+        let cont=document.body.childNodes[1]
+        console.log(cont)
+        console.log(cont.firstChild) //includes text
+        console.log(cont.lastChild)//includes text
+        console.log(cont.firstElementChild) //includes element only
+        console.log(cont.lastElementChild) //includes element only
+        console.log(cont.children) //all elements inside container
+        console.log(cont.firstElementChild.style.backgroundColor="red") //to bg-color an element
+        console.log(cont.lastElementChild.style.color="blue") //to color an element
+        console.log(cont.lastElementChild.style.border="2px solid blue") //to give border to an element
+        
+
+
+        // to access parent
+        console.log(cont.lastElementChild.parentElement)
+        console.log(cont.firstElementChild.nextElementSibling)
+        console.log(cont.lastElementChild.previousElementSibling) //element
+        console.log(cont.lastElementChild.previousSibling) //text
+        
+        
+        
+        //Table
+        console.log(document.body.children)
+        console.log(document.body.children[1])
+        console.log(document.body.children[1].rows)
+        console.log(document.body.children[1].caption)
+        console.log(document.body.children[1].tHead)
+        console.log(document.body.children[1].tFoot)
+        console.log(document.body.children[1].tBodies)
+      
+
+
+      
+
+    </script>
+</body>
+</html>
