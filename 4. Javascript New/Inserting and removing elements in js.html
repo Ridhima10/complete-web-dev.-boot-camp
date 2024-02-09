@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inserting and removing elements in js</title>
-</head>
-<body>
-<div class="container">
-    <div class="box">
+    <style>
+        .container{
+            .pink{
+                color: pink;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container red bg-green">
+      <div
+        class="box"
+        style="color: green"
+        data-createdby="ridhi"
+        data-conceptby="abhay"
+      >
         <h1>Hello I am a box</h1>
+      </div>
+      <!-- we can add custom data attributes -->
+      <div class="box">
+        <h1 style="color: blue">Hello I am a another box</h1>
+      </div>
     </div>
-    <div class="box">
-        <h1>Hello I am a another box</h1>
-    </div>
-</div>
+
+    <script>
+        /*
+        // to create and insert a node
+      let div = document.createElement("div");
+      div.innerHTML="Inserted <b>By Ridhi</b>"
+      div.setAttribute("class", "created");
+    //   document.querySelector(".container").append(div)
+    //   document.querySelector(".container").before(div) //inserted before container
+      document.querySelector(".container").after(div) //inserted after container */
+
+
+    //   to insert html string
+    let cont=document.querySelector(".container")
+    cont.insertAdjacentHTML("afterbegin","<b> Inserted element niuyuhjkl,kjhgtrtyuhjkl</b>")
+    </script>
 
 
     <script src="Inserting and removing elements in js.js"></script>
-</body>
+  </body>
 </html>
