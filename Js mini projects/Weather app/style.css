@@ -1,6 +1,6 @@
-*{
-    /* border: 2px solid red; */
-}
+/* *{
+    border: 2px solid red;
+} */
 .container{
     height: 90vh;
 }
@@ -37,12 +37,15 @@ img{
 .weather{
     display: none;
 }
+.weather-icon{
+    width: 35% !important;
+}
 .error{
-    /* display: none;
+    color: white;
     text-align: left;
     margin-left: 10px;
     font-size: 14px;
-    margin-top: 10px; */
+    margin-top: 10px;
 }
 .margin{
     margin-top: -36px;
