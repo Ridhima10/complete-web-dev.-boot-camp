@@ -1,0 +1,10 @@
+nav,ul{
+    display: flex;
+    background-color: black;
+    color: white;
+    list-style: none;
+    
+}
+nav li{
+    padding: 10px;
+}
