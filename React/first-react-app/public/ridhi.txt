@@ -1,0 +1,4 @@
+public contains all the static files
+
+you can access it by /
+hello world
