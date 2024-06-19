@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box {
+            height: 150px;
+            width: 150px;
+            border: 2px solid blueviolet;
+            background-color: rgb(196, 148, 240);
+            /* transition: background-image; */
+            /* transition-duration: 5s; */
+            background-image: url('./ab1.jpg');
+            transition: all 3s ease-in-out;
+        }
+        
+        .box:hover {
+            /* height: 300px;
+            width: 300px; */
+            background-image: url('./ab2.jpg');
+
+        }
+        img{
+            height: 50px;
+            width: 50px;
+            transition: height width;
+            transition-duration: 2s;
+        }
+        img:hover{
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box bg-img">
+      
+    </div>
+</body>
+
+</html>
