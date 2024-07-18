@@ -28,6 +28,8 @@
       let e = true;
       let f = BigInt("567") + BigInt("3");
       let g = undefined;
+      let h=455.44;
+
 
       console.log(a, b, c, d, e, f, g);
 
@@ -36,6 +38,7 @@
       console.log(typeof d);
       //typeof null is object
       console.log(typeof g);
+      console.log(typeof(h),h) //there is no floating point in js. it will output as 455.44 but type  is a number
 
       // Non-primitive- Objects (Key-value pairs)
       const item = {

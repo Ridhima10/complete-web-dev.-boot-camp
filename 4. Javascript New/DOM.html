@@ -1,49 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM(Document Object Model)</title>
 </head>
+
 <body>
     <div class="cont">
         <div class="box">
             <h2>This is a box</h2>
         </div>
-
+        <div id="one">
+            <h2 id="head">This is a box</h2>
+        </div>
 
     </div>
     <script>
+        //  Accessing elements
+
+        // By id
+        let id=document.getElementById('one')
+        console.log(id)
+
+        // By class
+        let classname=document.getElementsByClassName('cont')
+        console.log(classname)
+
+        // By Tag
+        let tag=document.getElementsByTagName('h2')
+        console.log(tag)
+
+        // Selects everything but one
+        let selectOne=document.querySelector('div')
+        console.log(selectOne)
+
+        // Selects everything but one
+        let selectAll=document.querySelectorAll('div')
+        console.log(selectAll)
+
+
+        // Updation
+
+        // this
+        let tag1=document.querySelectorAll('h2')[0];
+        tag1.style.backgroundColor="red"
+        
+        // or this
+        document.querySelectorAll('h2')[0].style.backgroundColor="red"
+
+        // updation of text
+        document.getElementById("head").innerHTML="Hello"
+
+
+
         // Updates the title of the page
-        document.title="DOM and BOM"
+        // document.title="DOM and BOM"
 
 
-        console.log(document.title)
-        console.log(document.body)
+        // console.log(document.title)
+        // console.log(document.body)
 
         // it injects inline css
-        document.body.style.backgroundColor="pink"
+        // document.body.style.backgroundColor="pink"
 
 
         // DOM AND BOM
         // DOM- mapping of document in an object
         // BOM(Browser object model)-working with everything except document
 
-        console.log(window)
-        console.log(window.document) 
+        // console.log(window)
+        // console.log(window.document)
         // or
-        console.log(document)
+        // console.log(document)
 
 
-        console.log(window.document.body)
+        // console.log(window.document.body)
         // or
-        console.log(document.body)
+        // console.log(document.body)
 
 
         //   inspect the element and then apply style
         // $0.style.backgroundColor="red"
 
-        
+
 
 
 
@@ -52,4 +93,5 @@
 
     </script>
 </body>
+
 </html>

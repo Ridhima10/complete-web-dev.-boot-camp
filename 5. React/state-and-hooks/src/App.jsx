@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
+  //state name - count with initial value 0, setCount= function
   const [count, setCount] = useState(0)
 
   return (

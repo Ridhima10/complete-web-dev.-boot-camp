@@ -1,4 +1,44 @@
+// let- updation , no-redeclaration and local scope
+
+// let x=10;
+// x=20
+// console.log(x)
+// function func(){
+//     let p=40
+//     console.log(p)
+// }
+// console.log(p)
+// func()
+
+
+// var - updation, re-declaration amd global scope and functional scope
+// var p=20;
+// p=4
+// console.log(p)
+
+// var p=40
+// function fun(){
+//     var p=409
+//     console.log(p)
+// }
+// console.log(p)
+// fun()
+
+
+
 // const is the strictest among all.let is less then const and least is the var
+// const- cant be changed, no updation, no re-declaration, functional and global scope
+
+// const a=34
+// console.log(a)
+// const a=40
+// function fun(){
+//   const b=45
+//   console.log(b)
+//   console.log(a)
+// }
+// fun()
+
 
 // var is hoisted
 // console.log(a)

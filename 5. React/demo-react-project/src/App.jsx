@@ -12,7 +12,7 @@ function App() {
   return (
     <>
      <Navbar/>
-     <div style={{display:"flex"}}>
+     <div style={{display:"flex", justifyContent:"center"}}>
 
      <Card title="Card 1" subtitle="1" desc="loremdhuduehduihe"/>
      <Card title="Card 2" subtitle="2" desc="loremdhuduehduihe"/>
