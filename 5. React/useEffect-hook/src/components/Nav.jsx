@@ -31,7 +31,7 @@ const Nav = ({ color }) => {
 
   return (
     <div>
-      I am a navbar of {color} color
+      I am a navbar of {color} 
     </div>
   )
 }

@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <div>
-        <Nav color={"red"+ "blue" +color}/>
+        <Nav color={"red"+ "blue" + color}/>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
